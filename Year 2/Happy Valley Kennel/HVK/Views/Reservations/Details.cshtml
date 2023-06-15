@@ -1,0 +1,101 @@
+﻿@model HVK.Models.Customer
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Reservation</h4>
+    <hr />
+    <div class="wrapper">
+        <h5>CUSTOMER</h5>
+        <dl class="row">
+            <dt class="col-sm-2">
+                customer name
+            </dt>
+            <dd class="col-sm-10">
+                @ViewBag.Reservations.Pet.Customer.FirstName   @ViewBag.Reservations.Pet.Customer.LastName
+            </dd>
+            <dt class="col-sm-2">
+                phone
+            </dt>
+            <dd class="col-sm-10">
+                @ViewBag.Reservations.Pet.Customer.Phone
+            </dd>
+            <dt class="col-sm-2">
+                address
+            </dt>
+            <dd class="col-sm-10">
+                @ViewBag.Reservations.Pet.Customer.Street @ViewBag.Reservations.Pet.Customer.City
+            </dd>
+
+
+        </dl>
+    </div>
+
+    <div class="wrapper">
+        <h5>Reservation</h5>
+        <dl class="row">
+
+            <dt class="col-sm-2">
+                StartDate
+                @*@Html.DisplayNameFor(model => model.Reservation.StartDate)*@
+            </dt>
+            <dd class="col-sm-10">
+                @ViewBag.Reservations.Reservation.StartDate
+                @*  @Html.DisplayFor(model => model.Reservation.StartDate)*@
+            </dd>
+            <dt class="col-sm-2">
+                EndDate
+                @* @Html.DisplayNameFor(model => model.Reservation.EndDate)*@
+            </dt>
+            <dd class="col-sm-10">
+                @ViewBag.Reservations.Reservation.EndDate
+                @* @Html.DisplayFor(model => model.Reservation.EndDate)*@
+            </dd>
+
+
+
+        </dl>
+    </div>
+    <div class="wrapper">
+        <h5>Pets</h5>
+        <dl class="row">
+
+            <h5>    @ViewBag.Reservations.Pet.Name</h5>
+            <dt class="col-sm-2">
+                Breed
+            </dt>
+
+            <dd class="col-sm-10">
+                @ViewBag.Reservations.Pet.Breed
+            </dd>
+
+            <dt class="col-sm-2">
+                Size
+            </dt>
+
+            <dd class="col-sm-10">
+                @ViewBag.Reservations.Pet.DogSize
+            </dd>
+
+            <dt class="col-sm-2">
+                Sex
+            </dt>
+
+            <dd class="col-sm-10">
+                @ViewBag.Reservations.Pet.Gender
+            </dd>
+
+        </dl>
+        @Html.ActionLink("Edit", "Edit", new { id = @ViewBag.Reservations.Pet.PetId}, new { @class = "btn btn-primary" })
+
+    </div>
+    <div>
+        @*@Html.ActionLink("Edit", "Edit", new { id = Model.PetReservationId }, new { @class = "btn btn-primary" }) |
+            @Html.ActionLink("Delete", "Delete", new { id = Model.PetReservationId }, new { @class = "btn btn-danger" }) |*@
+
+        <a asp-action="Index" asp-controller="Clerks">Back to List</a>
+    </div>

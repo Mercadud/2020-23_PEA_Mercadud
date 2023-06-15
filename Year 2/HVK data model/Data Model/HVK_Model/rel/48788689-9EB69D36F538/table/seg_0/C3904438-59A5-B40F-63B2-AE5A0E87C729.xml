@@ -1,0 +1,107 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C3904438-59A5-B40F-63B2-AE5A0E87C729" name="HVK_PET-VACCINATION">
+<createdBy>mercaman</createdBy>
+<createdTime>2021-10-21 22:22:16 UTC</createdTime>
+<generatorID>8E4A460A-79DB-0195-A242-7B97173E7240</generatorID>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<abbreviation>pv</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="pet_pet-PET_ID" id="53D26A09-848E-1975-C600-EB9988470644">
+<createdBy>mercaman</createdBy>
+<createdTime>2021-10-21 22:22:16 UTC</createdTime>
+<generatorID>BC74919A-ED08-3A10-3808-BAAB8BF24843</generatorID>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>B1396B01-8749-B8CA-7262-BB8A7E2A6426</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_pv_pet_pet-PET_ID</notNullConstraintName>
+<associations>
+<colAssociation fkAssociation="677226B3-DCD6-FB54-E13A-2238995F9DD0" referredColumn="E28282A5-9E1C-16AD-861A-9C1A144A4B38"/>
+</associations>
+</Column>
+<Column name="v_VACCINATION_TYPE" id="DE32115D-1E73-484D-EFA9-08AF397A3806">
+<createdBy>mercaman</createdBy>
+<createdTime>2021-10-21 22:22:16 UTC</createdTime>
+<generatorID>190BFF2E-81B3-2F25-7BA1-80C2C46A45B1</generatorID>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D58CB42D-C93A-FB41-08BA-42FBD73B9150</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_pv_v_VACCINATION_TYPE</notNullConstraintName>
+<associations>
+<colAssociation fkAssociation="000BBE01-B873-8A15-1744-15E7CB565FF4" referredColumn="D1ACD1DD-0B25-22C9-72D4-F1110C53E266"/>
+</associations>
+</Column>
+<Column name="VACCINATION_STATUS" id="1DAD3DF0-AFB8-56E6-4B1A-9AAD3D7E2211">
+<createdBy>mercaman</createdBy>
+<createdTime>2021-10-21 22:22:16 UTC</createdTime>
+<generatorID>F9AD88C0-F74E-58A6-65B2-28D3FC8FAED4</generatorID>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<constraintName>CK_pv_VACCINATION_STATUS</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT034</logicalDatatype>
+<domain>229CC33A-C72C-6B01-2FF6-6F6630E9EB40</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_pv_VACCINATION_STATUS</notNullConstraintName>
+</Column>
+<Column name="VACCINATION_EXPIRE" id="7B1F0E3F-2BBF-E135-A92F-23F55B41ADB9">
+<createdBy>mercaman</createdBy>
+<createdTime>2021-10-21 22:22:16 UTC</createdTime>
+<generatorID>6E6A10C0-7E1B-B6CC-D4B1-8134291AA718</generatorID>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<domain>395597CB-0224-A028-EAB8-FB0F030B9E94</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_pv_VACCINATION_EXPIRE</notNullConstraintName>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="EAA38FF0-B614-2BF6-C9D4-34D94B884477" name="HVK_PET-VACCINATION_PK">
+<createdBy>mercaman</createdBy>
+<createdTime>2021-10-21 22:22:16 UTC</createdTime>
+<generatorID>FF68E5DF-0303-A416-135B-FF4BA8CEFEAB</generatorID>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="53D26A09-848E-1975-C600-EB9988470644"/>
+<colUsage columnID="DE32115D-1E73-484D-EFA9-08AF397A3806"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5A7050DE-B0D3-8885-B165-1F73B94FA0E9" name="pv_pet_FK">
+<createdBy>mercaman</createdBy>
+<createdTime>2021-10-21 22:22:16 UTC</createdTime>
+<generatorID>03F8BF80-E607-F10E-65F4-4851C8AC77DB</generatorID>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="53D26A09-848E-1975-C600-EB9988470644"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6B981874-13D6-861F-B7C4-E92E2FD20967" name="pv_v_FK">
+<createdBy>mercaman</createdBy>
+<createdTime>2021-10-21 22:22:16 UTC</createdTime>
+<generatorID>F98E7457-0460-B018-C9BE-92A6BA6FE8FF</generatorID>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DE32115D-1E73-484D-EFA9-08AF397A3806"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

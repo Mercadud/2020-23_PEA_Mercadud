@@ -1,0 +1,106 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2AE12CC9-335D-B795-0C32-9BA9C8C5458C" name="HVK_RATE">
+<createdBy>mercaman</createdBy>
+<createdTime>2021-10-21 22:22:16 UTC</createdTime>
+<generatorID>A9C2D225-58C1-58C8-2E27-DD6E0CBC7EAE</generatorID>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<abbreviation>rat</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="RATE_ID" id="FC34E545-5CB9-6BF4-8D0B-FEB6062D0121">
+<createdBy>mercaman</createdBy>
+<createdTime>2021-10-21 22:22:16 UTC</createdTime>
+<generatorID>C5F41E54-D6B9-1A7E-07B0-8BCAD12D8065</generatorID>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>B1396B01-8749-B8CA-7262-BB8A7E2A6426</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_rat_RATE_ID</notNullConstraintName>
+</Column>
+<Column name="RATE_AMOUNT" id="D78B5618-3211-0778-5331-4C5E3759985E">
+<createdBy>mercaman</createdBy>
+<createdTime>2021-10-21 22:22:16 UTC</createdTime>
+<generatorID>DE18DCB3-921F-4AAF-ACB8-D04AB08968D2</generatorID>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT043</logicalDatatype>
+<domain>02910D14-22AA-74D8-44CC-2808F4FA80CE</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_rat_RATE_AMOUNT</notNullConstraintName>
+</Column>
+<Column name="RATE_DESCRIPTION" id="1E67C2FF-E63D-879F-26AD-62B049B1C3BB">
+<createdBy>mercaman</createdBy>
+<createdTime>2021-10-21 22:22:16 UTC</createdTime>
+<generatorID>71D9D6B3-5AA0-F34D-B18C-36A6F45A9B92</generatorID>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT040</logicalDatatype>
+<domain>7D2F2CD8-3976-1FD9-3880-9C41F5F6DE05</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_rat_RATE_DESCRIPTION</notNullConstraintName>
+</Column>
+<Column name="RATE_DOG_SIZE" id="A92920DB-0D06-EC61-C9A3-6B0A173B218A">
+<createdBy>mercaman</createdBy>
+<createdTime>2021-10-21 22:22:16 UTC</createdTime>
+<generatorID>7AE1D52E-22E0-4FAF-DBD5-52326AA26594</generatorID>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<constraintName>CK_rat_RATE_DOG_SIZE</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<listOfValues>
+<valueDef value="L" description="Large"/>
+<valueDef value="M" description="Medium"/>
+<valueDef value="S" description="Small"/>
+</listOfValues>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_rat_RATE_DOG_SIZE</notNullConstraintName>
+</Column>
+<Column name="DAILY_RATE_PET_TYPE" id="8B5D0536-7106-EF1A-E9D3-F682FDA4DDFB">
+<createdBy>mercaman</createdBy>
+<createdTime>2021-10-21 22:22:16 UTC</createdTime>
+<generatorID>64B1E4E8-DE01-F992-6F43-63B56AA10DB7</generatorID>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT043</logicalDatatype>
+<domain>02910D14-22AA-74D8-44CC-2808F4FA80CE</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_rat_DAILY_RATE_PET_TYPE</notNullConstraintName>
+</Column>
+<Column name="DAILY_RATE_NUMBER_OF_CATS" id="0601E0CC-0FCF-8FD1-6EBF-F272C5E510C6">
+<createdBy>mercaman</createdBy>
+<createdTime>2021-10-21 22:22:16 UTC</createdTime>
+<generatorID>F7BA5B6C-7BDE-62DB-09DB-17C296353E28</generatorID>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT043</logicalDatatype>
+<domain>02910D14-22AA-74D8-44CC-2808F4FA80CE</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_rat_DAILY_RATE_NUMBER_OF_CATS</notNullConstraintName>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F94D36A9-B1CE-79A0-398A-9DAC92FC140A" name="HVK_RATE_PK">
+<createdBy>mercaman</createdBy>
+<createdTime>2021-10-21 22:22:16 UTC</createdTime>
+<generatorID>672A7751-E370-7325-FA7B-C814B2FC00A2</generatorID>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FC34E545-5CB9-6BF4-8D0B-FEB6062D0121"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

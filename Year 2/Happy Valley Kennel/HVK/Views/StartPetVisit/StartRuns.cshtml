@@ -1,0 +1,115 @@
+﻿@model HVK.Models.Customer
+
+@{
+    ViewData["Title"] = "Start Pet Visit: Assign Runs";
+}
+
+
+
+
+
+
+<div class="container">
+    <div class="row container_box mt-3 mb-3">
+        <div class="col bg-dark text-light">
+            Review Reservation Information
+        </div>
+        <div class="col bg-dark text-light">
+            Print Contract
+        </div>
+        <div class="col bg-dark text-light">
+            Assign Runs
+        </div>
+    </div>
+
+
+
+    <div class="multiForm">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 container border-end">
+                    <h2>To Assign</h2>
+                    <div class="row mb-4" style="height: 300px;">
+                        <div class="card h-100 overflow-auto">
+
+                            <div class="card container_box p-2 m-2">
+                                <h4>@Model.Pets.FirstOrDefault().Name</h4>
+                                <p>Breed: @Model.Pets.FirstOrDefault().Breed</p>
+                                <p>
+                                    Size:@Model.Pets.FirstOrDefault().DogSize
+                                </p>
+                                <p>
+                                    Sex: @Model.Pets.FirstOrDefault().Gender
+                                </p>
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col">
+                                            <button type="button" class="btn btn-outline-secondary col-12">Assign Run</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <p class="text-center">End of Pet List</p>
+                        </div>
+                    </div>
+                    <h2>Assigned</h2>
+                    <div class="row mb-4" style="height: 300px;">
+                        <div class="card h-100 overflow-auto">
+
+                            <div class="card container_box p-2 m-2">
+                                <h4>@Model.Pets.FirstOrDefault().Name -> #12</h4>
+                                <p>Breed: @Model.Pets.FirstOrDefault().Breed</p>
+                                <p>
+                                    Size: @Model.Pets.FirstOrDefault().DogSize
+                                </p>
+                                <p>
+                                    Sex: @Model.Pets.FirstOrDefault().Gender
+                                </p>
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col">
+                                            <button type="button" class="btn btn-outline-secondary col-12">Re-Assign Run</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <p class="text-center">End of Pet List</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-8">
+                    <h2>Available</h2>
+                    @{
+
+                        <div class="card overflow-auto container" style="max-height:500px;">
+
+                            <div class="row">
+
+
+                                <div class="col-6 container_box mt-3 mb-3">
+                                    <p>Run #@*@ViewBag.Run.RunNumber*@</p>
+                                    <p>Size: @*@ViewBag.Run.Size*@ Location: @*@ViewBag.Run.Location*@ Covered: @*@ViewBag.Run.Covered*@ <button class="btn btn-secondary">Assign</button></p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="card container_box mt-3 mb-3">
+                            <p>Run #@*@ViewBag.Run.RunNumber*@</p>
+                            <p>Size: @*@ViewBag.Run.Size*@ Location: @*@ViewBag.Run.Location*@ Covered: @*@ViewBag.Run.Covered*@ <button class="btn btn-secondary">Unassign</button></p>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="d-flex flex-row-reverse col-12">
+            @Html.ActionLink("Finish", "Index", "Clerk", null, new { @class = "btn-secondary rounded float-end order-0 mx-1 px-2 bg-primary" })
+            @Html.ActionLink("Back", "Contract", "StartPetVisit", null, new { @class = "btn-secondary rounded float-end order-0 mx-1 px-2" })
+        </div>
+    </div>
+
+</div>
+

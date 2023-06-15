@@ -1,0 +1,197 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C7CF7140-FCAF-686F-41EF-16DDDF6D4629" name="HVK_PET">
+<createdBy>mercaman</createdBy>
+<createdTime>2021-10-21 22:22:16 UTC</createdTime>
+<generatorID>FA3EED99-4ACB-EA4F-6CB9-74A8D554E92A</generatorID>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<abbreviation>pet</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cus_CUSTOMER_ID" id="9E54D3E7-69B0-8B75-A717-FFE707D85846">
+<createdBy>mercaman</createdBy>
+<createdTime>2021-10-21 22:22:16 UTC</createdTime>
+<generatorID>5A161D95-E698-BDB5-09BC-728CCF4661A7</generatorID>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>B1396B01-8749-B8CA-7262-BB8A7E2A6426</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_pet_cus_CUSTOMER_ID</notNullConstraintName>
+<associations>
+<colAssociation fkAssociation="D55E1E01-C551-76DF-E30C-D993334DCCB1" referredColumn="324BA1C3-B5E9-D844-C4CC-05FE04B4932E"/>
+</associations>
+</Column>
+<Column name="pet-PET_ID" id="E28282A5-9E1C-16AD-861A-9C1A144A4B38">
+<createdBy>mercaman</createdBy>
+<createdTime>2021-10-21 22:22:16 UTC</createdTime>
+<generatorID>87E4BE0C-4D4D-900D-C14B-865F271F08BC</generatorID>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>B1396B01-8749-B8CA-7262-BB8A7E2A6426</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_pet_pet-PET_ID</notNullConstraintName>
+</Column>
+<Column name="pet-PET_TYPE" id="786E180C-37DA-50F6-FFAD-CD402160C310">
+<createdBy>mercaman</createdBy>
+<createdTime>2021-10-21 22:22:16 UTC</createdTime>
+<generatorID>5DFD346D-4914-A02F-B088-0628D4BDC6AD</generatorID>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<constraintName>CK_pet_pet-PET_TYPE</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>60370DA6-2E8B-FAAD-DD9D-C6E41300C4CA</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_pet_pet-PET_TYPE</notNullConstraintName>
+</Column>
+<Column name="pet-PET_NAME" id="C3BF48FC-BAAE-7CCE-EC0D-4691357C0AE4">
+<createdBy>mercaman</createdBy>
+<createdTime>2021-10-21 22:22:16 UTC</createdTime>
+<generatorID>3E4B174A-39E2-BFA0-D9A4-3A90B2AD7BDB</generatorID>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D58CB42D-C93A-FB41-08BA-42FBD73B9150</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_pet_pet-PET_NAME</notNullConstraintName>
+</Column>
+<Column name="pet-FOOD_ID" id="71E8C86B-20B1-C943-C3A2-0FE79AC7BE27">
+<createdBy>mercaman</createdBy>
+<createdTime>2021-10-21 22:22:16 UTC</createdTime>
+<generatorID>6F81BB60-4F86-C075-63C5-B02095EF4CEB</generatorID>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>B1396B01-8749-B8CA-7262-BB8A7E2A6426</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_pet_pet-FOOD_ID</notNullConstraintName>
+</Column>
+<Column name="pet-PET_GENDER" id="7296B6CD-A2C7-73A6-01F5-586304B349D7">
+<createdBy>mercaman</createdBy>
+<createdTime>2021-10-21 22:22:16 UTC</createdTime>
+<generatorID>FBF5970A-BCEE-7AB7-7BBD-89F4992D34F3</generatorID>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<constraintName>CK_pet_pet-PET_GENDER</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<listOfValues>
+<valueDef value="F" description="Female"/>
+<valueDef value="M" description="Male"/>
+</listOfValues>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_pet_pet-PET_GENDER</notNullConstraintName>
+</Column>
+<Column name="pet-PET_BREED" id="5B57697E-CEB4-2175-F4EF-A1613B118B3F">
+<createdBy>mercaman</createdBy>
+<createdTime>2021-10-21 22:22:16 UTC</createdTime>
+<generatorID>64004661-6EAD-2247-34D4-8079B287EE4B</generatorID>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D58CB42D-C93A-FB41-08BA-42FBD73B9150</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_pet_pet-PET_BREED</notNullConstraintName>
+</Column>
+<Column name="pet-PET_BIRTHDATE" id="EFF8E3F1-4398-E950-FB16-E09E5589A320">
+<createdBy>mercaman</createdBy>
+<createdTime>2021-10-21 22:22:16 UTC</createdTime>
+<generatorID>A6E58656-5F80-B85E-8607-2FACA5D66455</generatorID>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_pet_pet-PET_BIRTHDATE</notNullConstraintName>
+</Column>
+<Column name="cat_pet-PET_ID" id="0C00895A-52F1-89E7-B971-8A1C3C72A59C">
+<createdBy>mercaman</createdBy>
+<createdTime>2021-10-21 22:22:16 UTC</createdTime>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>B1396B01-8749-B8CA-7262-BB8A7E2A6426</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7A98E92E-88E1-8DD1-9FBE-A994EE35179C" referredColumn="6F1B9AA1-9C96-224F-BF8B-50D5654D4CD2"/>
+</associations>
+</Column>
+<Column name="dog_pet-PET_ID" id="F6B95391-0D92-A188-F3A5-7ACE85B51FF3">
+<createdBy>mercaman</createdBy>
+<createdTime>2021-10-21 22:22:16 UTC</createdTime>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>B1396B01-8749-B8CA-7262-BB8A7E2A6426</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="47C51FE9-D209-1229-ABE1-230269307D4C" referredColumn="A224C4E8-7232-6244-553F-2204EF298F18"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="60AF3119-F0E5-9668-0ADE-961D51CC08E9" name="HVK_PET_PK">
+<createdBy>mercaman</createdBy>
+<createdTime>2021-10-21 22:22:16 UTC</createdTime>
+<generatorID>09B76A78-2CFC-3329-1D79-F33033A5C471</generatorID>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E28282A5-9E1C-16AD-861A-9C1A144A4B38"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7552E321-A267-FD82-8DC8-1246CF896B52" name="pet_cat_FK">
+<createdBy>mercaman</createdBy>
+<createdTime>2021-10-21 22:22:16 UTC</createdTime>
+<generatorID>6666E2F2-282B-369A-23B4-0B597DA3C46C</generatorID>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0C00895A-52F1-89E7-B971-8A1C3C72A59C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4E30BA9B-F4BE-C291-FC62-7169EAE9E841" name="pet_dog_FK">
+<createdBy>mercaman</createdBy>
+<createdTime>2021-10-21 22:22:16 UTC</createdTime>
+<generatorID>E0B8C14D-AB6A-E32E-8FB4-A5945437F511</generatorID>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F6B95391-0D92-A188-F3A5-7ACE85B51FF3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2FB2DD76-4D2B-F430-32F3-799B3868523D" name="pet_cus_FK">
+<createdBy>mercaman</createdBy>
+<createdTime>2021-10-21 22:22:16 UTC</createdTime>
+<generatorID>B976CE19-3330-24AF-E71F-7306A18694D1</generatorID>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9E54D3E7-69B0-8B75-A717-FFE707D85846"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,112 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="4B1F2446-96F9-B43B-C7AD-FD1F353E9678" name="SERVICE">
+<createdBy>2082054</createdBy>
+<createdTime>2021-09-23 18:40:34 UTC</createdTime>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<engineerTo>
+<item key="48788689-91B6-4782-1B02-9EB69D36F538" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<shortName>ser</shortName>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="SERVICE_TYPE" id="F7C30E1F-0086-DBB9-8284-3A8BBE4C73C6">
+<createdBy>2088419</createdBy>
+<createdTime>2021-09-30 20:38:40 UTC</createdTime>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<engineerTo>
+<item key="48788689-91B6-4782-1B02-9EB69D36F538" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D58CB42D-C93A-FB41-08BA-42FBD73B9150</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="SERVICE_FREQUENCY" id="199F4541-21C5-892B-FC08-9408CA75559F">
+<createdBy>2088419</createdBy>
+<createdTime>2021-09-30 20:38:48 UTC</createdTime>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<engineerTo>
+<item key="48788689-91B6-4782-1B02-9EB69D36F538" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>57B3F91A-FC02-2321-BAED-5C24B0AF0C33</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="RATE_ID" id="3C3A5F08-F52E-9C28-15F5-6D6126E111B1">
+<createdBy>2088419</createdBy>
+<createdTime>2021-09-30 20:41:44 UTC</createdTime>
+<generatorID>81C166A2-C780-AB31-A43B-5AEC381F30CC</generatorID>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<engineerTo>
+<item key="48788689-91B6-4782-1B02-9EB69D36F538" value="true"/>
+</engineerTo>
+<referedAttribute>C5F41E54-D6B9-1A7E-07B0-8BCAD12D8065</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>B1396B01-8749-B8CA-7262-BB8A7E2A6426</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PET_ID" id="4F034E86-0391-5961-175A-6406EA161554">
+<createdBy>mercaman</createdBy>
+<createdTime>2021-10-04 16:53:35 UTC</createdTime>
+<generatorID>934B3F96-A8F0-59C6-BAA4-763561D3E50F</generatorID>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<engineerTo>
+<item key="48788689-91B6-4782-1B02-9EB69D36F538" value="true"/>
+</engineerTo>
+<referedAttribute>425B96D0-193D-A609-E110-48A8C8843E1F</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>B1396B01-8749-B8CA-7262-BB8A7E2A6426</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="RESERVATION_ID" id="CE93E63F-BC23-3CE2-ADAC-05FBF5000FED">
+<createdBy>mercaman</createdBy>
+<createdTime>2021-10-04 16:53:35 UTC</createdTime>
+<generatorID>934B3F96-A8F0-59C6-BAA4-763561D3E50F</generatorID>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<engineerTo>
+<item key="48788689-91B6-4782-1B02-9EB69D36F538" value="true"/>
+</engineerTo>
+<referedAttribute>06EC1438-6C21-1A52-EAF0-380EC5497307</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>B1396B01-8749-B8CA-7262-BB8A7E2A6426</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="SERVICE_DESCRIPTION" id="35E08C1C-A6B0-0CA2-4D99-100680B00978">
+<createdBy>2088419</createdBy>
+<createdTime>2021-10-14 18:33:32 UTC</createdTime>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<engineerTo>
+<item key="48788689-91B6-4782-1B02-9EB69D36F538" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT040</logicalDatatype>
+<domain>7D2F2CD8-3976-1FD9-3880-9C41F5F6DE05</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="6FE10383-FB04-87EC-AAEA-90887BF041CF" name="SERVICE PK">
+<createdBy>2088419</createdBy>
+<createdTime>2021-09-30 20:38:44 UTC</createdTime>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<engineerTo>
+<item key="48788689-91B6-4782-1B02-9EB69D36F538" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>F7C30E1F-0086-DBB9-8284-3A8BBE4C73C6</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

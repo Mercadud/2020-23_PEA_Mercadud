@@ -1,0 +1,104 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="7E08CE92-0D85-07C1-A8D3-5FA510166A6A" name="SUITE">
+<createdBy>2082054</createdBy>
+<createdTime>2021-09-14 18:20:31 UTC</createdTime>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<engineerTo>
+<item key="48788689-91B6-4782-1B02-9EB69D36F538" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<shortName>sui</shortName>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="RESERVATION_ID" id="AC9EF636-9ED8-FEF7-608F-BEB89A8C88B2">
+<createdBy>2088419</createdBy>
+<createdTime>2021-09-30 20:38:23 UTC</createdTime>
+<generatorID>A61B6055-8629-988B-2E14-E37255AFDA74</generatorID>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<engineerTo>
+<item key="48788689-91B6-4782-1B02-9EB69D36F538" value="true"/>
+</engineerTo>
+<referedAttribute>8EF9DFF3-7E9C-12FF-0AAF-AC0DED671B8B</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>B1396B01-8749-B8CA-7262-BB8A7E2A6426</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CAT_SUITE_ID" id="AB3456FC-3FC6-326B-4E56-4BEB04FC1FD2">
+<createdBy>2088419</createdBy>
+<createdTime>2021-09-30 20:40:03 UTC</createdTime>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<engineerTo>
+<item key="48788689-91B6-4782-1B02-9EB69D36F538" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>B1396B01-8749-B8CA-7262-BB8A7E2A6426</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CAT_SUITE_TYPE" id="4969CB27-C4EA-7627-2348-26DA31BDF414">
+<createdBy>2088419</createdBy>
+<createdTime>2021-09-30 20:40:08 UTC</createdTime>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<engineerTo>
+<item key="48788689-91B6-4782-1B02-9EB69D36F538" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D58CB42D-C93A-FB41-08BA-42FBD73B9150</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CAT_SUITE_STATUS" id="E401DCDC-A428-CCBD-2295-3F9B5A66C373">
+<createdBy>2088419</createdBy>
+<createdTime>2021-09-30 20:40:15 UTC</createdTime>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<engineerTo>
+<item key="48788689-91B6-4782-1B02-9EB69D36F538" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<listOfValues>
+<valueDef value="Broken" description=""/>
+<valueDef value="Cleaning" description=""/>
+<valueDef value="In-Use" description=""/>
+<valueDef value="available" description=""/>
+</listOfValues>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CAT_SUITE_DESCRIPTION" id="D6D7B328-6200-E1DC-653D-1B1AD2FA2C74">
+<createdBy>2088419</createdBy>
+<createdTime>2021-10-14 18:26:41 UTC</createdTime>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<engineerTo>
+<item key="48788689-91B6-4782-1B02-9EB69D36F538" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT040</logicalDatatype>
+<domain>7D2F2CD8-3976-1FD9-3880-9C41F5F6DE05</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="23DB143F-906D-B46E-F0FE-91E1697E0346" name="SUITE PK">
+<createdBy>2088419</createdBy>
+<createdTime>2021-09-30 20:40:07 UTC</createdTime>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<engineerTo>
+<item key="48788689-91B6-4782-1B02-9EB69D36F538" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>AB3456FC-3FC6-326B-4E56-4BEB04FC1FD2</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

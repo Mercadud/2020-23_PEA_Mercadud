@@ -1,0 +1,112 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="A9C2D225-58C1-58C8-2E27-DD6E0CBC7EAE" name="RATE">
+<createdBy>2082054</createdBy>
+<createdTime>2021-09-23 18:51:50 UTC</createdTime>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<engineerTo>
+<item key="48788689-91B6-4782-1B02-9EB69D36F538" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<shortName>rat</shortName>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="RATE_ID" id="C5F41E54-D6B9-1A7E-07B0-8BCAD12D8065">
+<createdBy>2088419</createdBy>
+<createdTime>2021-09-30 20:41:23 UTC</createdTime>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<engineerTo>
+<item key="48788689-91B6-4782-1B02-9EB69D36F538" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>B1396B01-8749-B8CA-7262-BB8A7E2A6426</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="RATE_AMOUNT" id="DE18DCB3-921F-4AAF-ACB8-D04AB08968D2">
+<createdBy>2088419</createdBy>
+<createdTime>2021-09-30 20:41:28 UTC</createdTime>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<engineerTo>
+<item key="48788689-91B6-4782-1B02-9EB69D36F538" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT043</logicalDatatype>
+<domain>02910D14-22AA-74D8-44CC-2808F4FA80CE</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="RATE_DESCRIPTION" id="71D9D6B3-5AA0-F34D-B18C-36A6F45A9B92">
+<createdBy>2088419</createdBy>
+<createdTime>2021-09-30 20:41:37 UTC</createdTime>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<engineerTo>
+<item key="48788689-91B6-4782-1B02-9EB69D36F538" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT040</logicalDatatype>
+<domain>7D2F2CD8-3976-1FD9-3880-9C41F5F6DE05</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="RATE_DOG_SIZE" id="7AE1D52E-22E0-4FAF-DBD5-52326AA26594">
+<createdBy>2088419</createdBy>
+<createdTime>2021-10-14 18:31:55 UTC</createdTime>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<engineerTo>
+<item key="48788689-91B6-4782-1B02-9EB69D36F538" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<listOfValues>
+<valueDef value="L" description="Large"/>
+<valueDef value="M" description="Medium"/>
+<valueDef value="S" description="Small"/>
+</listOfValues>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DAILY_RATE_PET_TYPE" id="64B1E4E8-DE01-F992-6F43-63B56AA10DB7">
+<createdBy>2088419</createdBy>
+<createdTime>2021-10-14 18:55:23 UTC</createdTime>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<engineerTo>
+<item key="48788689-91B6-4782-1B02-9EB69D36F538" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT043</logicalDatatype>
+<domain>02910D14-22AA-74D8-44CC-2808F4FA80CE</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DAILY_RATE_NUMBER_OF_CATS" id="F7BA5B6C-7BDE-62DB-09DB-17C296353E28">
+<createdBy>2088419</createdBy>
+<createdTime>2021-10-14 18:55:46 UTC</createdTime>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<engineerTo>
+<item key="48788689-91B6-4782-1B02-9EB69D36F538" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT043</logicalDatatype>
+<domain>02910D14-22AA-74D8-44CC-2808F4FA80CE</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="672A7751-E370-7325-FA7B-C814B2FC00A2" name="RATE PK">
+<createdBy>2088419</createdBy>
+<createdTime>2021-09-30 20:41:27 UTC</createdTime>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<engineerTo>
+<item key="48788689-91B6-4782-1B02-9EB69D36F538" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>C5F41E54-D6B9-1A7E-07B0-8BCAD12D8065</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

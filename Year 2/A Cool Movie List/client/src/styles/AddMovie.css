@@ -1,0 +1,20 @@
+#addMovie {
+    text-align: center;
+    background-color: #323232;
+    border: solid #454545 thick;
+    width: max-content;
+    padding: 10px;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+#addMovie > div {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 10px;
+    margin: 10px;
+}
+
+#addMovie > button {
+    background-color: rgb(1, 206, 1);
+}

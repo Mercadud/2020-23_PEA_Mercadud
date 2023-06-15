@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>it stands for Poker
+    </title>
+    <link rel="stylesheet" href="./Styles/game.css">
+</head>
+<body>
+    <header class="threeDEffect">
+        <div id="info">
+            <p id="userName"></p>
+            <p id="fullName"></p>
+            <p id="mon"></p>
+            <p id="bet">Bet:</p>
+        </div>
+        <div>
+    <h2>Partially Oblivious Kard Epyc Racket</h2>
+    <p class="small">(It stands for P.O.K.E.R.)</p>
+    </div>
+</header>
+    <div id="gameWindow">
+        
+       <span id="table">
+           <p id="pBet">
+               <label for="bet">Enter Bet:</label>
+               <input type="number" name="bet" id="betInput" class="input">
+               <input type="submit" value="Enter!" id="submitBid" class="submit">
+               <img src="./Pictures/chips/chipBlack.png" alt="chip" class="spin">
+               <p id="errorMessageBid"></p>
+           </p>
+           <p id="pSwitch">
+               <label for="switch">Switch Card?</label>
+               <input type="submit" value="Enter" id="switchSub" class="submit">
+               <p id="errorMessageSwitch"></p>
+           </p>
+           <h1 id="Winner"></h1>
+           <p id="pPlayAgain">
+            <label for="">Play again?</label>
+            <input type="button" value="Yes!" class="submit" id="playAgain">
+            <input type="button" value="No!" class="submit" id="leaveNow">
+           </p>
+           <h1 id="youLose">You have no more money! Goodbye:(</h1>
+       </span>
+
+       <div class="congrats">
+           <h1>congrats!</h1>
+       </div>
+       <div id="popupWindow" >
+        <p id="poppers"></p>
+        <button>Ok!</button>
+        <button>This isn't me!</button>
+       </div>
+    </div>
+    <br>
+    <footer class="threeDEffect">
+            <p id="hand0"></p>
+            <p id="hand1"></p>
+            <p id="hand2"></p>
+            <p id="hand3"></p>
+            <p id="hand4"></p>
+            <p id="hand5"></p>
+    </footer>
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.js"
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"
+  ></script>
+    <Script src="./js/game.js"></Script>
+    <Script src="./js/stuffHandler.js"></Script>
+</body>
+</html>

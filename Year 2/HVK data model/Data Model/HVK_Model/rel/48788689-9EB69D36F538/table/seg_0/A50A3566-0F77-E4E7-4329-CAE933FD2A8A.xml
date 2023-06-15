@@ -1,0 +1,131 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A50A3566-0F77-E4E7-4329-CAE933FD2A8A" name="HVK_MEDICATION">
+<createdBy>mercaman</createdBy>
+<createdTime>2021-10-21 22:22:16 UTC</createdTime>
+<generatorID>B2D881F5-4D09-666C-DC23-7CB28C36FAF5</generatorID>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<abbreviation>med</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="MEDICATION_TYPE" id="446C036E-BD29-D3FC-B5B4-51DC03676F23">
+<createdBy>mercaman</createdBy>
+<createdTime>2021-10-21 22:22:16 UTC</createdTime>
+<generatorID>A1642AFE-7F2F-91A0-ADCF-B9DF72652923</generatorID>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D58CB42D-C93A-FB41-08BA-42FBD73B9150</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_med_MEDICATION_TYPE</notNullConstraintName>
+</Column>
+<Column name="MEDICATION_FREQUENCY" id="3ABC4D8A-91E9-4D5F-54BC-DF1642C078C2">
+<createdBy>mercaman</createdBy>
+<createdTime>2021-10-21 22:22:16 UTC</createdTime>
+<generatorID>23B04758-3920-9921-55DB-288E9961F5E8</generatorID>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>57B3F91A-FC02-2321-BAED-5C24B0AF0C33</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_med_MEDICATION_FREQUENCY</notNullConstraintName>
+</Column>
+<Column name="pr_pet_pet-PET_ID" id="8D2AA719-8739-C912-2CDD-6E4DAFCFC389">
+<createdBy>mercaman</createdBy>
+<createdTime>2021-10-21 22:22:16 UTC</createdTime>
+<generatorID>1CB2AC23-686E-D4EC-D91C-3611A958CC3F</generatorID>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>B1396B01-8749-B8CA-7262-BB8A7E2A6426</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_med_pr_pet_pet-PET_ID</notNullConstraintName>
+<associations>
+<colAssociation fkAssociation="0A0F7782-05DE-5204-8496-C9B98CFD5FCB" referredColumn="1848AC43-4872-9B30-E4A6-BBFABD2016B4"/>
+</associations>
+</Column>
+<Column name="pr_res_RESERVATION_ID" id="54011665-22E3-7C21-5B5A-0ACA5C239E05">
+<createdBy>mercaman</createdBy>
+<createdTime>2021-10-21 22:22:16 UTC</createdTime>
+<generatorID>323D9EDE-5658-9B62-C31C-9ABA29F6D9A0</generatorID>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>B1396B01-8749-B8CA-7262-BB8A7E2A6426</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_med_pr_res_RESERVATION_ID</notNullConstraintName>
+<associations>
+<colAssociation fkAssociation="0A0F7782-05DE-5204-8496-C9B98CFD5FCB" referredColumn="7FEB309E-89C7-9099-CA17-3CFAB729D569"/>
+</associations>
+</Column>
+<Column name="MEDICATION_SPECIAL_INTRUCTIONS" id="E878A4B5-0E29-6990-1947-A391CBB5538C">
+<createdBy>mercaman</createdBy>
+<createdTime>2021-10-21 22:22:16 UTC</createdTime>
+<generatorID>15FC772F-3CD9-160A-E39D-2924AA50CD4C</generatorID>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT040</logicalDatatype>
+<domain>7D2F2CD8-3976-1FD9-3880-9C41F5F6DE05</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_med_MEDICATION_SPECIAL_INTRUCTIONS</notNullConstraintName>
+</Column>
+<Column name="MEDICATION_END_DATE" id="0C8B5239-64BB-5E91-B220-26DE77EE8D9A">
+<createdBy>mercaman</createdBy>
+<createdTime>2021-10-21 22:22:16 UTC</createdTime>
+<generatorID>8244BEA5-A917-788A-207A-B1784C94FD5D</generatorID>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<domain>395597CB-0224-A028-EAB8-FB0F030B9E94</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_med_MEDICATION_END_DATE</notNullConstraintName>
+</Column>
+<Column name="MEDICATION_NAME" id="499D53C4-E83D-656D-D5DE-5B804FC97E18">
+<createdBy>mercaman</createdBy>
+<createdTime>2021-10-21 22:22:16 UTC</createdTime>
+<generatorID>1BF8C7FF-7417-AEF2-29F1-205B15DE55E8</generatorID>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D58CB42D-C93A-FB41-08BA-42FBD73B9150</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_med_MEDICATION_NAME</notNullConstraintName>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="619C2397-27B6-BEF7-A805-714960D77D02" name="HVK_MEDICATION_PK">
+<createdBy>mercaman</createdBy>
+<createdTime>2021-10-21 22:22:16 UTC</createdTime>
+<generatorID>02B233EA-38DD-40FA-A590-18C3F879203E</generatorID>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="446C036E-BD29-D3FC-B5B4-51DC03676F23"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5299B3F7-266B-C53E-1032-B54DC0B0E213" name="med_pr_FK">
+<createdBy>mercaman</createdBy>
+<createdTime>2021-10-21 22:22:16 UTC</createdTime>
+<generatorID>07974901-E4FF-A79F-6ABD-AFC7078BB4D4</generatorID>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8D2AA719-8739-C912-2CDD-6E4DAFCFC389"/>
+<colUsage columnID="54011665-22E3-7C21-5B5A-0ACA5C239E05"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

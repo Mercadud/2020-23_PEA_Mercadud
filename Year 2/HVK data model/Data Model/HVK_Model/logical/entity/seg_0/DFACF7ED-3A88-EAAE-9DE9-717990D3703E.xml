@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="DFACF7ED-3A88-EAAE-9DE9-717990D3703E" name="PET RESERVATION">
+<createdBy>2088419</createdBy>
+<createdTime>2021-09-30 20:29:21 UTC</createdTime>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<engineerTo>
+<item key="48788689-91B6-4782-1B02-9EB69D36F538" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<shortName>pr</shortName>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="PET_ID" id="425B96D0-193D-A609-E110-48A8C8843E1F">
+<createdBy>2088419</createdBy>
+<createdTime>2021-09-30 20:35:27 UTC</createdTime>
+<generatorID>CC46D0EE-47D4-A2BA-34DB-F7FC1839EFF8</generatorID>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<engineerTo>
+<item key="48788689-91B6-4782-1B02-9EB69D36F538" value="true"/>
+</engineerTo>
+<referedAttribute>87E4BE0C-4D4D-900D-C14B-865F271F08BC</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>B1396B01-8749-B8CA-7262-BB8A7E2A6426</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="RESERVATION_ID" id="06EC1438-6C21-1A52-EAF0-380EC5497307">
+<createdBy>2088419</createdBy>
+<createdTime>2021-09-30 20:38:23 UTC</createdTime>
+<generatorID>30876C7F-541A-0198-C8EC-E5C62DB6BD74</generatorID>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<engineerTo>
+<item key="48788689-91B6-4782-1B02-9EB69D36F538" value="true"/>
+</engineerTo>
+<referedAttribute>8EF9DFF3-7E9C-12FF-0AAF-AC0DED671B8B</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>B1396B01-8749-B8CA-7262-BB8A7E2A6426</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PET_RESERVATION_NUMBER" id="3F5EDB68-9E54-2AB4-E9C9-624797261D26">
+<createdBy>2088419</createdBy>
+<createdTime>2021-10-14 18:39:16 UTC</createdTime>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<engineerTo>
+<item key="48788689-91B6-4782-1B02-9EB69D36F538" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>B1396B01-8749-B8CA-7262-BB8A7E2A6426</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="0AAD6DAC-E91F-BF4B-E487-F4A6C6EA9269" name="PET RESERVATION PK">
+<createdBy>2088419</createdBy>
+<createdTime>2021-09-30 20:35:26 UTC</createdTime>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<engineerTo>
+<item key="48788689-91B6-4782-1B02-9EB69D36F538" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>425B96D0-193D-A609-E110-48A8C8843E1F</attributeRef>
+<attributeRef>06EC1438-6C21-1A52-EAF0-380EC5497307</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

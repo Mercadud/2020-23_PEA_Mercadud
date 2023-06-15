@@ -1,0 +1,86 @@
+﻿@model HVK.Models.Customer
+
+@{
+    ViewData["Title"] = "Customer Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Customer</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            FirstName
+        </dt>
+        <dd class="col-sm-10">
+            @Model.FirstName
+        </dd>
+        <dt class="col-sm-2">
+            LastName
+        </dt>
+        <dd class="col-sm-10">
+            @Model.LastName
+        </dd>
+        <dt class="col-sm-2">
+            Street
+        </dt>
+        <dd class="col-sm-10">
+            @Model.Street
+        </dd>
+        <dt class="col-sm-2">
+            City
+        </dt>
+        <dd class="col-sm-10">
+            @Model.City
+        </dd>
+        <dt class="col-sm-2">
+            Province
+        </dt>
+        <dd class="col-sm-10">
+            @Model.Province
+        </dd>
+        <dt class="col-sm-2">
+            PostalCode
+        </dt>
+        <dd class="col-sm-10">
+            @Model.PostalCode
+        </dd>
+        <dt class="col-sm-2">
+            Phone
+        </dt>
+        <dd class="col-sm-10">
+            @Model.Phone
+        </dd>
+        <dt class="col-sm-2">
+            CellPhone
+        </dt>
+        <dd class="col-sm-10">
+            @Model.CellPhone
+        </dd>
+        <dt class="col-sm-2">
+            Email
+        </dt>
+        <dd class="col-sm-10">
+            @Model.Email
+        </dd>
+        <dt class="col-sm-2">
+            EmergencyContactFirstName
+        </dt>
+        <dd class="col-sm-10">
+            @Model.EmergencyContactFirstName
+        </dd>
+        <dt class="col-sm-2">
+            EmergencyContactLastName
+        </dt>
+        <dd class="col-sm-10">
+            @Model.EmergencyContactLastName
+        </dd>
+        <dt class="col-sm-2">
+            EmergencyContactPhone
+        </dt>
+        <dd class="col-sm-10">
+            @Model.EmergencyContactPhone
+        </dd>
+    </dl>
+</div>

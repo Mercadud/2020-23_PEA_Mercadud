@@ -1,0 +1,73 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="DD0F13B2-DDD1-74B1-CED8-777F02CAAE60" name="SPCEIAL NOTE">
+<createdBy>2082054</createdBy>
+<createdTime>2021-09-23 18:41:42 UTC</createdTime>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<engineerTo>
+<item key="48788689-91B6-4782-1B02-9EB69D36F538" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<shortName>sn</shortName>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="PET_ID" id="66236288-8376-897D-2035-9AB256374824">
+<createdBy>2088419</createdBy>
+<createdTime>2021-09-30 20:35:27 UTC</createdTime>
+<generatorID>4438FE2A-AD81-0CD9-8A58-4388397CECD9</generatorID>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<engineerTo>
+<item key="48788689-91B6-4782-1B02-9EB69D36F538" value="true"/>
+</engineerTo>
+<referedAttribute>87E4BE0C-4D4D-900D-C14B-865F271F08BC</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>B1396B01-8749-B8CA-7262-BB8A7E2A6426</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="SPECIAL_NOTE_ID" id="341D2A7B-F582-AA99-8BD4-DF39E44051CF">
+<createdBy>2088419</createdBy>
+<createdTime>2021-09-30 20:41:48 UTC</createdTime>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<engineerTo>
+<item key="48788689-91B6-4782-1B02-9EB69D36F538" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>B1396B01-8749-B8CA-7262-BB8A7E2A6426</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="SPECIAL_NOTE_DESCRIPTION" id="392CAFEB-93DD-D2D5-8153-75A94D223A7F">
+<createdBy>2088419</createdBy>
+<createdTime>2021-09-30 20:41:59 UTC</createdTime>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<engineerTo>
+<item key="48788689-91B6-4782-1B02-9EB69D36F538" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT040</logicalDatatype>
+<domain>7D2F2CD8-3976-1FD9-3880-9C41F5F6DE05</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="477D1BFB-F133-B374-84B8-BA654A16A49C" name="SPCEIAL NOTE PK">
+<createdBy>2088419</createdBy>
+<createdTime>2021-09-30 20:41:59 UTC</createdTime>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<engineerTo>
+<item key="48788689-91B6-4782-1B02-9EB69D36F538" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>341D2A7B-F582-AA99-8BD4-DF39E44051CF</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

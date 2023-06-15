@@ -1,0 +1,2 @@
+# How Does It Get Rendered?
+In Advanced Topics 1 (420-G40), we had to do research on a topic related to computer science of our choice. I decided to work on something related to graphics programming, since I was already intrested in that topic before and this would give me the chance to combine school work with my hobbies. This is the presentation that explained to my classmates what I've learned during my research.

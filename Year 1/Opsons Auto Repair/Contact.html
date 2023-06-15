@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="./styles/contact.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <ul>
+          <li>
+            <a href="./index.html">
+              <img class="logo" src="./images/EPSONS.png" alt="Logo" />
+            </a>
+          </li>
+          <li><a class="choices" href="UsedCars.html">Used Cars</a></li>
+          <li><a class="choices" href="Services.html">Services</a></li>
+          <li><a class="choices" href="Contact.html">Contact us</a></li>
+          <li><a class="choices" href="About.html">About Us</a></li>
+          <li><a class="choices" href="./Testimonials.html">Testimonials</a></li>
+        </ul>
+      </header>
+      <h1 id="h1center">Contact Us</h1>
+      <dl>
+        <dt class="center">
+          U can visit us in our locations across Canada below
+        </dt>
+        <dd class="center">69 Nice Ave. Ontario, Canada</dd>
+        <dd class="center">420 high St. Manitoba, Canada</dd>
+        <dd class="center">842 Clyde Ave. Ontario, Canada</dd>
+        <dt class="center">Availabilities</dt>
+      </dl>
+      <table class="desktop">
+        <tr>
+          <th>Monday</th>
+          <th>Tuesday</th>
+          <th>Wednesday</th>
+          <th>Thursday</th>
+          <th>Friday</th>
+          <th>Saturday</th>
+          <th>Sunday</th>
+        </tr>
+        <tr>
+          <td>8am-5pm</td>
+          <td>8am-5pm</td>
+          <td>8am-5pm</td>
+          <td>8am-5pm</td>
+          <td>8am-5pm</td>
+          <td>1pm-5pm</td>
+          <td>Closed</td>
+        </tr>
+      </table>
+      <table class="mobile">
+        <tr>
+          <th>Monday</th>
+          <td>8am-5pm</td>
+        </tr>
+        <tr>
+          <th>Tuesday</th>
+          <td>8am-5pm</td>
+        </tr>
+        <tr>
+          <th>Wednesday</th>
+          <td>8am-5pm</td>
+        </tr>
+        <tr>
+          <th>Thursday</th>
+          <td>8am-5pm</td>
+        </tr>
+        <tr>
+          <th>Friday</th>
+          <td>8am-5pm</td>
+        </tr>
+        <tr>
+          <th>Saturday</th>
+          <td>8am-5pm</td>
+        </tr>
+        <tr>
+          <th>Sunday</th>
+          <td>Closed</td>
+        </tr>
+      </table>
+      <fieldset>
+        <legend id="legend">
+          Or send us your information through this form
+        </legend>
+        <form action="reservation" method="GET">
+          <div id="name">
+            <label for="name">Enter Full Name:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              size="50"
+              maxlength="60"
+              placeholder="First Last Name"
+            />
+          </div>
+          <br />
+          <div id="phone">
+            <label for="phone">Enter Phone Number:</label>
+            <input
+              type="tel"
+              name="phone"
+              id="phone"
+              size="13"
+              maxlength="17"
+              placeholder="+1 (771) 265-9193"
+            />
+          </div>
+          <br />
+          <div id="email">
+            <label for="email">Enter your Email:</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              maxlength="50"
+              placeholder="something@EdsonsAutoRepair.com"
+            />
+          </div>
+          <div id="drop">
+            <label for="drop">What is your gender?
+            </label>
+            <select name="drop" id="drop">
+              <option value="1">Male</option>
+              <option value="2">Female</option>
+              <option value="3">Other</option>
+              <option value="4" checked>Prefer not to respond</option>
+            </select>
+          </div>
+          <div id="find">
+            <label for="">How did you find us?</label> <br>
+            <input type="checkbox" name="find" id="1">
+            <label for="1">returning customer</label> <br>
+            <input type="checkbox" name="find" id="2">
+            <label for="2">Word of mouth</label> <br>
+            <input type="checkbox" name="find" id="3">
+            <label for="3">Advertisements</label> <br>
+            <input type="checkbox" name="find" id="4">
+            <label for="4">Google search</label> <br>
+            <input type="checkbox" name="find" id="5">
+            <label for="5">Other</label> <br>
+          </div>
+          <div id="why">
+            <h3>What needs fixing?</h3>
+            <input type="radio" name="satisfaction" id="Oil change" />
+            <label for="Oil change">Oil change</label> <br />
+            <input type="radio" name="satisfaction" id="Alignment" />
+            <label for="Alignment">Alignment</label> <br />
+            <input type="radio" name="satisfaction" id="Safety Checks" />
+            <label for="Safety Checks">Safety Checks</label> <br />
+            <input type="radio" name="satisfaction" id="Other" />
+            <label for="Other">Other: </label>
+            <textarea
+              name="Other"
+              id="OtherIssue"
+              cols="30"
+              rows="16"
+            ></textarea>
+          </div>
+          <div id="submit">
+            <input type="submit" value="Submit" />
+          </div>
+        </form>
+      </fieldset>
+      <dl>
+        <dt class="center">Or take a reservation now, by calling us at</dt>
+        <dd class="center, mobile"><a href="tel:711-265-9193.">(771) 265-9193</a></dd>
+        <dd class="center, desktop">771) 265-9193</dd>
+      </dl>
+      <br /><br />
+      <br />
+      <br />
+    </div>
+    <footer>
+      <ul>
+        <li>Links <br /></li>
+        <li><a class="footerChoices" href="Home.html">Home</a></li>
+        <li><a class="footerChoices" href="UsedCars.html">Used Cars</a></li>
+        <li><a class="footerChoices" href="Services.html">Services</a></li>
+        <li><a class="footerChoices" href="Contact.html">Contact Us</a></li>
+        <li><a class="footerChoices" href="About.html">About Us</a></li>
+        <li><a class="footerChoices" href="./Testimonials.html">Testimonials</a></li>
+      </ul>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo:wght@300&display=swap");
+
+@font-face {
+  font-family: "puma font";
+  src: url("../font/MYPUMA__.TTF");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Exo", sans-serif;
+  color: white;
+  overflow: hidden;
+  background: url("../assets/stadium.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+#master {
+  animation: fancyIn 0.75s;
+}
+
+@keyframes fancyIn {
+  from {
+    opacity: 0;
+    transform: rotateX(-10deg);
+  }
+
+  to {
+    opacity: 1;
+    transform: rotateX(0);
+  }
+}
+
+
+#wrapper {
+  background-color: #343434;
+  width: max-content;
+  margin: auto;
+  margin-top: 25px;
+  padding: 3px 10px 10px 10px;
+  border-radius: 10px;
+  border: #454545 solid;
+  box-shadow: #787878 5px 5px 10px;
+  animation: fancyIn 0.75s;
+}
+
+form > div > label {
+  width: 140px;
+  display: inline-block;
+  text-align: right;
+  margin: 5px 0 5px 0;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: auto;
+  background-color: #121212;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  font-family: "puma font";
+}
+
+header form {
+  position: absolute;
+  width: min-content;
+  right: 10;
+  top: 10;
+}
+
+header h1 {
+  text-align: center;
+}
+
+.error {
+  color: red;
+  border: #121212;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+#formBtns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: max-content;
+  grid-column-gap: 5px;
+  margin: auto;
+}
+
+input,
+select {
+  padding: 3px;
+  background-color: white;
+  border: #121212 solid;
+}
+
+input:hover,
+select:hover {
+  padding: 3px;
+  background-color: whitesmoke;
+  border: whitesmoke solid;
+}
+
+#img {
+  background-color: inherit;
+  border: none;
+}
+
+img {
+  max-height: 100px;
+}
+
+.smoke {
+  animation: b 10s linear infinite;
+  border-radius: 50%;
+  background-color: white;
+  opacity: 0.1;
+  position: absolute;
+  bottom: -200px;
+  z-index: -1;
+  filter: blur(20px);
+}
+@keyframes b {
+  0% {
+    background: dodgerblue;
+  }
+  20% {
+    background: white;
+  }
+  100% {
+    bottom: 60%;
+    opacity: 0;
+  }
+}
+
+.pro {
+  text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #301d74 0%,
+    #b400a5 25%,
+    #fff800 50%,
+    #b400a5 75%,
+    #301d74 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+.player {
+  min-width: 400px;
+  text-align: center;
+}
+
+.player div {
+  background-color: rgba(12, 12, 12, 0.5);
+  width: 400px;
+  margin: auto;
+  height: 100%;
+  position: relative;
+}
+
+.player .pf {
+  display: block;
+  margin: auto;
+  margin-bottom: 4px;
+}
+
+.player h1 {
+  text-transform: uppercase;
+  color: #fff;
+}
+
+#listWrapper {
+  display: grid;
+  background-color: rgba(12, 12, 12, 0.5);
+  padding: 10px;
+  grid-row-gap: 5px;
+  grid-template-rows: auto auto;
+  grid-auto-flow: column dense;
+  overflow-x: auto;
+}
+
+.player .edit {
+  position: absolute;
+  right: 45;
+  bottom: 5;
+}
+
+.player .delete {
+  position: absolute;
+  right: 5;
+  bottom: 5;
+}
+
+#addPlayer {
+  margin: auto;
+  width: min-content;
+  margin-top: 10px;
+}
+
+#Add_Player {
+  padding: 70px;
+  font-size: 4em;
+  opacity: 0.8;
+  transition: 0.2s;
+}
+
+#Add_Player:hover {
+  padding: 75px;
+  opacity: 1;
+}
+
+.goBack {
+  text-decoration: none;
+  padding: 5px;
+  border: #121212;
+  background-color: #343434;
+  display: block;
+  margin: auto;
+  width: fit-content;
+  color: white;
+  border-radius: 10px;
+}

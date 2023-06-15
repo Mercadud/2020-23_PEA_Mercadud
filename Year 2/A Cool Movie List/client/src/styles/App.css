@@ -1,0 +1,36 @@
+header {
+    margin: auto;
+    text-align: center;
+}
+
+body {
+    background-color: #121212;
+    color: white;
+}
+
+#addMovieBtn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 3em;
+}
+
+#selectors {
+    margin: auto;
+    background-color: #323232;
+    border: solid #454545 thick;
+    padding: 10px;
+    width: max-content;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 10px;
+    margin-bottom: 10px;
+}
+
+.list {
+    padding: 5px;
+    margin: 5px;
+    background-color: #121212;
+    border: #545454;
+    user-select: none;
+}

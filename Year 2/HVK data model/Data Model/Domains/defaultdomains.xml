@@ -1,0 +1,161 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<DomainFile class="oracle.dbtools.crest.model.design.DomainFileWrapper" fileName="defaultdomains">
+   <domains>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="cost" id="02910D14-22AA-74D8-44CC-2808F4FA80CE">
+         <createdBy>mercaman</createdBy>
+         <createdTime>2021-10-20 18:10:58 UTC</createdTime>
+         <ownerDesignName>System</ownerDesignName>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypePrecision>2</dataTypePrecision>
+         <dataTypeSize>64</dataTypeSize>
+         <fileName>defaultdomains</fileName>
+         <logicalDatatype>LOGDT043</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="Postal_Code" id="0E34CB4B-E156-1A78-1A04-F3EE205A1FF3">
+         <createdBy>mercaman</createdBy>
+         <createdTime>2021-10-20 18:05:29 UTC</createdTime>
+         <ownerDesignName>System</ownerDesignName>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>6</dataTypeSize>
+         <fileName>defaultdomains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="Street" id="0EC11638-B8BF-1EBF-475B-D37D833FA774">
+         <createdBy>mercaman</createdBy>
+         <createdTime>2021-10-20 17:51:20 UTC</createdTime>
+         <ownerDesignName>System</ownerDesignName>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>50</dataTypeSize>
+         <fileName>defaultdomains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="Boolean" id="229CC33A-C72C-6B01-2FF6-6F6630E9EB40">
+         <createdBy>mercaman</createdBy>
+         <createdTime>2021-10-20 18:09:34 UTC</createdTime>
+         <ownerDesignName>System</ownerDesignName>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>1</dataTypeSize>
+         <fileName>defaultdomains</fileName>
+         <logicalDatatype>LOGDT034</logicalDatatype>
+         <listOfValues>
+            <valueDef value="0" description=""/>
+            <valueDef value="1" description=""/>
+         </listOfValues>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="City" id="37493F7B-4E62-C5D3-4D5D-8EE7A2EC6D1C">
+         <createdBy>mercaman</createdBy>
+         <createdTime>2021-10-20 17:51:50 UTC</createdTime>
+         <ownerDesignName>System</ownerDesignName>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>30</dataTypeSize>
+         <fileName>defaultdomains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="Date" id="395597CB-0224-A028-EAB8-FB0F030B9E94">
+         <createdBy>mercaman</createdBy>
+         <createdTime>2021-10-20 18:09:14 UTC</createdTime>
+         <ownerDesignName>System</ownerDesignName>
+         <avTSortOrder>0</avTSortOrder>
+         <fileName>defaultdomains</fileName>
+         <logicalDatatype>LOGDT008</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="frequency" id="57B3F91A-FC02-2321-BAED-5C24B0AF0C33">
+         <createdBy>mercaman</createdBy>
+         <createdTime>2021-10-20 18:10:24 UTC</createdTime>
+         <ownerDesignName>System</ownerDesignName>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>32</dataTypeSize>
+         <fileName>defaultdomains</fileName>
+         <logicalDatatype>LOGDT019</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="pet_type" id="60370DA6-2E8B-FAAD-DD9D-C6E41300C4CA">
+         <createdBy>mercaman</createdBy>
+         <createdTime>2021-10-20 18:08:22 UTC</createdTime>
+         <ownerDesignName>System</ownerDesignName>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>3</dataTypeSize>
+         <fileName>defaultdomains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <listOfValues>
+            <valueDef value="CAT" description=""/>
+            <valueDef value="DOG" description=""/>
+         </listOfValues>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="email" id="70C83F90-120E-5713-641E-742B84E78FF8">
+         <createdBy>mercaman</createdBy>
+         <createdTime>2021-10-20 18:08:04 UTC</createdTime>
+         <ownerDesignName>System</ownerDesignName>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>30</dataTypeSize>
+         <fileName>defaultdomains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="Sentence" id="7D2F2CD8-3976-1FD9-3880-9C41F5F6DE05">
+         <createdBy>mercaman</createdBy>
+         <createdTime>2021-10-20 18:10:08 UTC</createdTime>
+         <ownerDesignName>System</ownerDesignName>
+         <avTSortOrder>0</avTSortOrder>
+         <fileName>defaultdomains</fileName>
+         <logicalDatatype>LOGDT040</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="Province" id="81A76DF1-35CC-32BC-A207-91437743C36B">
+         <createdBy>mercaman</createdBy>
+         <createdTime>2021-10-20 17:52:09 UTC</createdTime>
+         <ownerDesignName>System</ownerDesignName>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>2</dataTypeSize>
+         <fileName>defaultdomains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <listOfValues>
+            <valueDef value="AB" description="Alberta"/>
+            <valueDef value="BC" description="British Columbia"/>
+            <valueDef value="MB" description="Manitoba"/>
+            <valueDef value="NB" description="New Brunswick"/>
+            <valueDef value="NL" description="Newfoundland and Labrador"/>
+            <valueDef value="NS" description="Nova Scotia"/>
+            <valueDef value="NT" description="Northwest Territories"/>
+            <valueDef value="NU" description="Nunavut"/>
+            <valueDef value="ON" description="Ontario"/>
+            <valueDef value="PE" description="Prince Edward Island"/>
+            <valueDef value="QC" description="Quebec"/>
+            <valueDef value="SK" description="Saskatchewan"/>
+            <valueDef value="YT" description="Yukon"/>
+         </listOfValues>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="phone" id="8EAE4EC5-3AB2-C32D-8595-B53EB406E040">
+         <createdBy>mercaman</createdBy>
+         <createdTime>2021-10-20 18:05:55 UTC</createdTime>
+         <ownerDesignName>System</ownerDesignName>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>10</dataTypeSize>
+         <fileName>defaultdomains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="id_number" id="B1396B01-8749-B8CA-7262-BB8A7E2A6426">
+         <createdBy>mercaman</createdBy>
+         <createdTime>2021-10-20 18:07:39 UTC</createdTime>
+         <ownerDesignName>System</ownerDesignName>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>10</dataTypeSize>
+         <fileName>defaultdomains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="name" id="D58CB42D-C93A-FB41-08BA-42FBD73B9150">
+         <createdBy>mercaman</createdBy>
+         <createdTime>2021-10-20 17:48:34 UTC</createdTime>
+         <ownerDesignName>System</ownerDesignName>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>40</dataTypeSize>
+         <fileName>defaultdomains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="Unknown" id="DOM3000004">
+         <createdBy>mercaman</createdBy>
+         <createdTime>2021-10-04 16:53:32 UTC</createdTime>
+         <ownerDesignName>System</ownerDesignName>
+         <avTSortOrder>0</avTSortOrder>
+         <fileName>defaultdomains</fileName>
+         <logicalDatatype>LOGDT017</logicalDatatype>
+      </Domain>
+   </domains>
+</DomainFile>

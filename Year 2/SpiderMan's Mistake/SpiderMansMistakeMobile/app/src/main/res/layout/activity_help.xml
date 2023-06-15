@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HelpActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="373dp"
+        android:layout_height="699dp"
+        android:fontFamily="@font/quicksand_medium"
+        android:text="Hello Adventurer,\n\nI'm sorry to put you in this situtation but here are the rules of the game:\n\n-You have 6 lives\n-Every time you guess a letter wrong, you lose a life and Spider-Man comes closer to his doom.\n-Help Spiderman not experience something extremely violent by guessing correctly.\n-Don't worry tho, hints can give you 1 letter at the cost of a life... use wisely!\n\nGood Luck and don't let Spider-Man down!\n\nSincerely,\n\nUr mom lmao."
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

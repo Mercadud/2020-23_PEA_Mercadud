@@ -1,0 +1,108 @@
+﻿@model HVK.Models.Customer
+
+@{
+    ViewData["Title"] = "Start Pet Visit: Contract";
+}
+
+
+
+
+
+
+<div class="container">
+    <div class="row container_box mt-3 mb-3">
+        <div class="col bg-dark text-light">
+            Review Reservation Information
+        </div>
+        <div class="col bg-dark text-light">
+            Print Contract
+        </div>
+        <div class="col bg-light">
+            Assign Runs
+        </div>
+    </div>
+
+    <div class="multiForm container">
+        <div class="text-uppercase container mt-2">
+
+
+
+        </div>
+    </div>
+    <div class="multiForm">
+        <div class="text-uppercase container mt-2">
+
+            <div class="row container_box mb-3">
+                <div class="col-6">
+                    Customer:<br />
+                    Name: @Model.FirstName @Model.LastName<br />
+                    Phone: @Model.Phone<br />
+                    Address: @Model.Street
+                </div>
+                <div class="col-6">
+                    Emergency Contact <br />
+                    Name: @Model.EmergencyContactFirstName @Model.EmergencyContactLastName <br />
+                    Phone: @Model.EmergencyContactPhone
+                </div>
+            </div>
+            <div class="row container-fluid card mb-3 container_box">
+                <div class="row">
+                    <div class="col-12">
+                        Reservation:
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4">
+                        Start Date: @*@ViewBag.Reservation.StartDate.ToString("yyyy-MM-dd")*@
+                    </div>
+                    <div class="col-4">
+                        End Date: @*@ViewBag.Reservation.EndDate.ToString("yyyy-MM-dd")*@
+                    </div>
+                    <div class="col-4">
+                        Number of Days: @*@ViewBag.Reservation.EndDate.Subtract(@ViewBag.Reservation.StartDate).Days*@
+                    </div>
+                </div>
+            </div>
+            <div class="row card container_box_2 mb-3">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Pet</th>
+                            <th scope="col">Services</th>
+                            <th scope="col">Daily Rate</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row"><h1>@Model.Pets.FirstOrDefault().Name</h1></th>
+                            <td>
+                                <table class="table">
+                                    <tr>
+                                        <td>@*@ViewBag.Service.ServiceDescription: @ViewBag.DailyRate.DogSize*@</td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <td>
+                                <table class="table">
+                                    <tr>
+                                        <td>@*@ViewBag.DailyRate.Rate*@$</td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </tbody>
+
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="d-flex flex-row-reverse col-12">
+            @Html.ActionLink("Next", "StartRuns", "StartPetVisit", null, new { @class = "btn-secondary rounded float-end order-0 mx-1 px-2 bg-primary" })
+            @Html.ActionLink("Back", "Index", "StartPetVisit", null, new { @class = "btn-secondary rounded float-end order-0 mx-1 px-2" })
+        </div>
+    </div>
+
+</div>
+

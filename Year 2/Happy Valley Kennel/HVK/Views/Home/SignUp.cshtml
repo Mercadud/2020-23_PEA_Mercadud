@@ -1,0 +1,106 @@
+﻿@model HVK.Models.Customer
+
+@{
+    ViewData["Title"] = "Sign Up Page";
+}
+
+<h1 class="mt-2 mb-2">Create Account</h1>
+
+
+<div class="container">
+    
+        <form asp-action="SignUp">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <h3 class="m-3">Personal Information</h3>
+            <div class="row">
+                <div class="form-group col-md-4 m-3">
+                    <label asp-for="FirstName" class="control-label"></label>
+                    <input asp-for="FirstName" class="form-control" />
+                    <span asp-validation-for="FirstName" class="text-danger"></span>
+                </div>
+                <div class="form-group col-md-4 m-3">
+                    <label asp-for="LastName" class="control-label"></label>
+                    <input asp-for="LastName" class="form-control" />
+                    <span asp-validation-for="LastName" class="text-danger"></span>
+                </div>
+                <div class="form-group col-md-4 m-3">
+                    <label asp-for="Email" class="control-label"></label>
+                    <input asp-for="Email" class="form-control" />
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+            </div>
+
+            <h3 class="m-3">Contact Information</h3>
+            <div class="row">
+                <div class="form-group col-md-3 m-3">
+                    <label asp-for="Street" class="control-label"></label>
+                    <input asp-for="Street" class="form-control" />
+                    <span asp-validation-for="Street" class="text-danger"></span>
+                </div>
+
+                <div class="form-group col-md-3 m-3">
+                    <label asp-for="City" class="control-label"></label>
+                    <input asp-for="City" class="form-control" />
+                    <span asp-validation-for="City" class="text-danger"></span>
+                </div>
+
+                <div class="form-group col-md-3 m-3">
+                    <label asp-for="Province" class="control-label"></label>
+                    <input asp-for="Province" class="form-control" />
+                    <span asp-validation-for="Province" class="text-danger"></span>
+                </div>
+
+                <div class="form-group col-md-3 m-3">
+                    <label asp-for="PostalCode" class="control-label"></label>
+                    <input asp-for="PostalCode" class="form-control" />
+                    <span asp-validation-for="PostalCode" class="text-danger"></span>
+                </div>
+
+                <div class="form-group col-md-3 m-3">
+                    <label asp-for="Phone" class="control-label"></label>
+                    <input asp-for="Phone" class="form-control" />
+                    <span asp-validation-for="Phone" class="text-danger"></span>
+                </div>
+                <div class="form-group col-md-3 m-3">
+                    <label asp-for="CellPhone" class="control-label"></label>
+                    <input asp-for="CellPhone" class="form-control" />
+                    <span asp-validation-for="CellPhone" class="text-danger"></span>
+                </div>
+            </div>
+           
+           <h3 class="m-3">Emergency Contact (Optional)</h3>
+          
+           <div class="row">
+
+               <div class="form-group col-md-3 m-3">
+                   <label asp-for="EmergencyContactFirstName" class="control-label"></label>
+                   <input asp-for="EmergencyContactFirstName" class="form-control" />
+                   <span asp-validation-for="EmergencyContactFirstName" class="text-danger"></span>
+               </div>
+               <div class="form-group col-md-3 m-3">
+                   <label asp-for="EmergencyContactLastName" class="control-label"></label>
+                   <input asp-for="EmergencyContactLastName" class="form-control" />
+                   <span asp-validation-for="EmergencyContactLastName" class="text-danger"></span>
+               </div>
+               <div class="form-group col-md-3 m-3">
+                   <label asp-for="EmergencyContactPhone" class="control-label"></label>
+                   <input asp-for="EmergencyContactPhone" class="form-control" />
+                   <span asp-validation-for="EmergencyContactPhone" class="text-danger"></span>
+               </div>
+              
+                   <input type="hidden" asp-for="Password" class="form-control"  value="password1234"/>
+                  
+           </div>
+           
+           
+           
+            <div class="form-group col-md-4 m-3">
+                <input type="submit" value="Create" class="btn btn-primary mx-2" />
+                <a class="mx-2" asp-action="Index">Cancel</a>
+            </div>
+        </form>
+    
+</div>
+
+
+

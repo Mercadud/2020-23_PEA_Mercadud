@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/css2?family=Play&display=swap");
+body {
+  background-color: #121212;
+  color: white;
+  text-align: center;
+  font-size: larger;
+  font-family: "Play", sans-serif;
+  background-image: url(../Pictures/istockphoto-651780598-612x612.jpg);
+}
+
+.threeDEffect {
+  background-color: #232323;
+  box-shadow: 0px 0px 24px black;
+  border-radius: 12px;
+  padding: 0px 25px;
+}
+
+#gameWindow {
+  background-color: #232323;
+  box-shadow: 0 0 24px black;
+  margin-top: 50px;
+  border-radius: 10px;
+}
+
+#info {
+  padding: 1%;
+  text-align: left;
+  border-radius: 40%;
+}
+
+#fullName {
+  font-size: smaller;
+  margin-top: 0;
+  margin: 0;
+}
+
+#userName {
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+#bet {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#mon {
+  margin-top: 0;
+  margin: 0;
+}
+
+#table {
+  height: 500px;
+  width: 100%;
+  background-color: #343434;
+  display: grid;
+  border-radius: 50%;
+  box-shadow: 0px 0px 24px black;
+  margin: auto;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto;
+}
+
+.small {
+  font-size: x-small;
+}
+
+.input {
+  background-color: #232323;
+  border: #121212 solid;
+  color: white;
+}
+
+.submit {
+  background-color: #232323;
+  color: white;
+  border: #121212 solid;
+  padding: 3px 5px;
+  border-radius: 5px;
+}
+
+header {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto;
+  position: sticky;
+  top: 0;
+  width: 95%;
+  margin: auto;
+}
+
+footer {
+  position: sticky;
+  bottom: 0;
+  width: 90%;
+  padding: 0;
+  margin-bottom: 0;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  margin: auto;
+}
+
+footer p {
+  margin: 0;
+}
+
+p img {
+  position: relative;
+  left: 0px;
+}
+
+img {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+}
+
+.darken {
+  animation: darken 0.5s;
+  opacity: 0;
+}
+
+.lighten {
+  animation: lighten 0.5s;
+  opacity: 1;
+}
+
+.spin {
+  animation: rotate 3s;
+  animation-iteration-count: infinite;
+}
+#popupWindow {
+  position: absolute;
+  background-color: #121212;
+  box-shadow: 0px 0px 24px black;
+  border-radius: 12px;
+  padding: 0px 25px;
+  width: 100%;
+  height: 100%;
+}
+
+.congrats {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #121212;
+  box-shadow: 0px 0px 24px black;
+  border-radius: 12px;
+  padding: 0px 25px;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  footer {
+    position: sticky;
+    bottom: 0;
+    width: 50%;
+    padding: 0;
+    margin-bottom: 0;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    margin: 0;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  footer {
+    position: sticky;
+    bottom: 0;
+    width: 40%;
+    padding: 0;
+    margin-bottom: 0;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    margin: 0;
+  }
+
+  #gameWindow {
+    background-color: #232323;
+    box-shadow: 0 0 24px black;
+    padding: 50px;
+    margin-top: 50px;
+    border-radius: 10px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  footer {
+    position: sticky;
+    bottom: 0;
+    width: 30%;
+    padding: 0;
+    margin-bottom: 0;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    margin: 0;
+  }
+}
+
+@keyframes darken {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes lighten {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,147 @@
+﻿@model IEnumerable<HVK.Models.Reservation>
+
+@{
+    ViewData["Title"] = "Clerk Home";
+    Layout = "_Clerk";
+}
+
+
+<div class="container">
+    <hr />
+    <form asp-action="Search" asp-controller="Clerks" method="get">
+        <input type="text" name="search" placeholder="search customer" class="form-control col-12">
+    </form>
+    <hr/>
+    <div class="row">
+        <div class="col-4"><h5>Current Reservations</h5></div>
+    </div>
+    <div class="wrapper1">
+        <table class="table">
+            <thead>
+            <tr>
+                <th>
+                    END DATE
+                </th>
+                <th>
+                    PETS
+                </th>
+                <th>
+                    CUSTOMER
+                </th>
+                <th>
+
+                </th>
+            </tr>
+            </thead>
+            <tbody>
+            @foreach (var item in Model.Where(r => r.StartDate == DateTime.Today).OrderBy(r => r.StartDate))
+            {
+                <tr>
+                    <td>
+                        @item.EndDate.ToString("yyyy-MM-dd")
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.PetReservations.FirstOrDefault().Pet.Name)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.PetReservations.FirstOrDefault().Pet.Customer.FirstName)
+                        @Html.DisplayFor(modelItem => item.PetReservations.FirstOrDefault().Pet.Customer.LastName)
+                    </td>
+                    <td class="text-right">
+                        @Html.ActionLink("View", "Details", "Reservations", new {id = item.ReservationId}, new {@class = "btn btn-secondary"})
+
+                    </td>
+                </tr>
+            }
+            </tbody>
+        </table>
+    </div>
+    <hr/>
+    <div class="row">
+        <div class="col-4"><h5>Upcoming Reservations</h5></div>
+    </div>
+    <div class="wrapper1">
+        <table class="table">
+            <thead>
+            <tr>
+                <th>
+                    START DATE
+                </th>
+                <th>
+                    PETS
+                </th>
+                <th>
+                    CUSTOMER
+                </th>
+                <th></th>
+            </tr>
+            </thead>
+            <tbody>
+            @foreach (var item in Model.Where(r => r.StartDate > DateTime.Today).OrderBy(r => r.StartDate))
+            {
+
+                <tr>
+                    <td>
+                        @item.EndDate.ToString("yyyy-MM-dd")
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.PetReservations.FirstOrDefault().Pet.Name)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.PetReservations.FirstOrDefault().Pet.Customer.FirstName)
+                        @Html.DisplayFor(modelItem => item.PetReservations.FirstOrDefault().Pet.Customer.LastName)
+                    </td>
+                    <td>
+                    <td class="text-right">
+                        @Html.ActionLink("View", "Details", "Reservations", new {id = item.ReservationId}, new {@class = "btn btn-secondary"})
+
+                    </td>
+                </tr>
+            }
+            </tbody>
+        </table>
+
+    </div>
+    <hr/>
+    <div class="row">
+        <div class="col-4"><h5>Post Reservations</h5></div>
+    </div>
+    <div class="wrapper1">
+        <table class="table">
+            <thead>
+            <tr>
+                <th>
+                    END DATE
+                </th>
+                <th>
+                    PETS
+                </th>
+                <th>
+                    CUSTOMER
+                </th>
+            </tr>
+            </thead>
+            <tbody>
+            @foreach (var item in Model.Where(r => r.EndDate < DateTime.Today).OrderBy(r => r.StartDate))
+            {
+
+                <tr>
+                    <td>
+                        @item.EndDate.ToString("yyyy-MM-dd")
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.PetReservations.FirstOrDefault().Pet.Name)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.PetReservations.FirstOrDefault().Pet.Customer.FirstName)
+                        @Html.DisplayFor(modelItem => item.PetReservations.FirstOrDefault().Pet.Customer.LastName)
+                    </td>
+                    <td class="text-right">
+                        @Html.ActionLink("View", "Details", "Reservations", new {id = item.ReservationId}, new {@class = "btn btn-secondary"})
+                    </td>
+                </tr>
+            }
+            </tbody>
+        </table>
+    </div>
+</div>

@@ -1,0 +1,140 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="FA3EED99-4ACB-EA4F-6CB9-74A8D554E92A" name="PET">
+<createdBy>2082054</createdBy>
+<createdTime>2021-09-14 18:25:44 UTC</createdTime>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<engineerTo>
+<item key="48788689-91B6-4782-1B02-9EB69D36F538" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<shortName>pet</shortName>
+<subtypesRefType>Arc implementation</subtypesRefType>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="CUSTOMER_ID" id="5A161D95-E698-BDB5-09BC-728CCF4661A7">
+<createdBy>2088419</createdBy>
+<createdTime>2021-09-30 20:33:23 UTC</createdTime>
+<generatorID>B976CE19-3330-24AF-E71F-7306A18694D1</generatorID>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<engineerTo>
+<item key="48788689-91B6-4782-1B02-9EB69D36F538" value="true"/>
+</engineerTo>
+<referedAttribute>25EA18CE-5C13-4AA1-115A-0739DD08C220</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>B1396B01-8749-B8CA-7262-BB8A7E2A6426</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PET_ID" id="87E4BE0C-4D4D-900D-C14B-865F271F08BC">
+<createdBy>2088419</createdBy>
+<createdTime>2021-09-30 20:35:20 UTC</createdTime>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<engineerTo>
+<item key="48788689-91B6-4782-1B02-9EB69D36F538" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>B1396B01-8749-B8CA-7262-BB8A7E2A6426</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PET_TYPE" id="5DFD346D-4914-A02F-B088-0628D4BDC6AD">
+<createdBy>2088419</createdBy>
+<createdTime>2021-09-30 20:35:29 UTC</createdTime>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<engineerTo>
+<item key="48788689-91B6-4782-1B02-9EB69D36F538" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>60370DA6-2E8B-FAAD-DD9D-C6E41300C4CA</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PET_NAME" id="3E4B174A-39E2-BFA0-D9A4-3A90B2AD7BDB">
+<createdBy>2088419</createdBy>
+<createdTime>2021-09-30 20:35:36 UTC</createdTime>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<engineerTo>
+<item key="48788689-91B6-4782-1B02-9EB69D36F538" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D58CB42D-C93A-FB41-08BA-42FBD73B9150</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="FOOD_ID" id="6F81BB60-4F86-C075-63C5-B02095EF4CEB">
+<createdBy>2088419</createdBy>
+<createdTime>2021-09-30 20:42:32 UTC</createdTime>
+<generatorID>52EDD9B7-A8B6-23CE-CED7-A5B48E7D4EFF</generatorID>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<engineerTo>
+<item key="48788689-91B6-4782-1B02-9EB69D36F538" value="true"/>
+</engineerTo>
+<referedAttribute>F84008C6-0899-3BA6-2BCC-AC66F1C6A51B</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>B1396B01-8749-B8CA-7262-BB8A7E2A6426</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PET_GENDER" id="FBF5970A-BCEE-7AB7-7BBD-89F4992D34F3">
+<createdBy>2088419</createdBy>
+<createdTime>2021-10-14 18:44:02 UTC</createdTime>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<engineerTo>
+<item key="48788689-91B6-4782-1B02-9EB69D36F538" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<listOfValues>
+<valueDef value="F" description="Female"/>
+<valueDef value="M" description="Male"/>
+</listOfValues>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PET_BREED" id="64004661-6EAD-2247-34D4-8079B287EE4B">
+<createdBy>2088419</createdBy>
+<createdTime>2021-10-14 18:46:18 UTC</createdTime>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<engineerTo>
+<item key="48788689-91B6-4782-1B02-9EB69D36F538" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D58CB42D-C93A-FB41-08BA-42FBD73B9150</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PET_BIRTHDATE" id="A6E58656-5F80-B85E-8607-2FACA5D66455">
+<createdBy>2088419</createdBy>
+<createdTime>2021-10-14 18:46:46 UTC</createdTime>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<engineerTo>
+<item key="48788689-91B6-4782-1B02-9EB69D36F538" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="09B76A78-2CFC-3329-1D79-F33033A5C471" name="PET PK">
+<createdBy>2088419</createdBy>
+<createdTime>2021-09-30 20:35:26 UTC</createdTime>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<engineerTo>
+<item key="48788689-91B6-4782-1B02-9EB69D36F538" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>87E4BE0C-4D4D-900D-C14B-865F271F08BC</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

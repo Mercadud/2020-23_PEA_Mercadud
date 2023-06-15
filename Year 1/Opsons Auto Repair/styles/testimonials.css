@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+
+:root {
+  --font_fam: "Ubuntu", sans-serif;
+  --main-colour: #355a9b;
+  --logo_colour: #1f3681;
+}
+
+body {
+  font-family: var(--font_fam);
+  color: black;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+
+.wrapper {
+  max-width: 768px;
+  margin: auto;
+  background-color: #f8f8ff;
+}
+
+.logo {
+  margin: auto;
+  width: 90%;
+}
+
+header {
+  margin: auto;
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.choices {
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+  font-size: 1.5em;
+  background-color: var(--main-colour);
+  border-radius: 10px;
+  width: 95%;
+  margin: 5px 0px;
+  padding: 10px 0px;
+}
+
+.choices:hover {
+  color: white;
+  background-color: var(--logo_colour);
+}
+
+footer {
+  background-color: var(--logo_colour);
+  max-width: 100%;
+  color: white;
+  padding-left: 1.2em;
+  padding-top: 3px;
+  padding-bottom: 10px;
+  border-top: solid black;
+}
+
+.footerChoices {
+  color: white;
+  text-decoration: none;
+}
+
+.footerChoices:checked {
+  color: black;
+}
+
+footer ul li {
+  padding: 5px;
+  color: black;
+  display: inline;
+}
+
+p {
+  font-size: 1.2em;
+  word-spacing: 0.2em;
+}
+
+a {
+  text-decoration: none;
+  color: var(--main-colour);
+}
+
+p.quote {
+  font-style: italic;
+}
+
+video {
+  width: 90%;
+  margin: auto;
+}
+
+div#bagman {
+  text-align: right;
+}
+
+main {
+  display: grid;
+}
+
+main img {
+  margin: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .wrapper {
+    max-width: 1000px;
+  }
+
+  body {
+    background-image: url(../images/Home_Image.jpg);
+    background-repeat: no-repeat;
+    background-color: var(--main-colour);
+  }
+
+  .logo {
+    float: left;
+    width: auto;
+    margin-right: 400px;
+  }
+
+  .choices {
+    width: 19%;
+  }
+
+  header ul li {
+    display: inline;
+  }
+
+  footer {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
+  }
+
+  p {
+    width: 100%;
+  }
+
+  main {
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  main div:nth-of-type(1) {
+    grid-column: 1/span 3;
+    margin: auto;
+  }
+
+  div#jeff p{
+    text-align: center;
+  }
+
+  div#bagman p{
+    text-align: right;
+
+  }
+
+  div#vid {
+    grid-column: 1/span 3;
+    text-align: center;
+  }
+
+  div#vid video {
+    width: 60%;
+    display: block;
+    margin: 0 auto;
+  }
+
+  div#stafftitle {
+    grid-column: 1 / span 3;
+    text-align: center;
+  }
+
+  img:nth-of-type(1) {
+    grid-column: 1;
+  }
+
+  div#oogway {
+    grid-column: 1;
+    text-align: center;
+  }
+
+  div#jeffy, div#jeffy p {
+    grid-column: 2;
+    grid-row: 5;
+  }
+
+  div#jeffy p {
+    text-align: center;
+    padding-top: 5px;
+  }
+
+  img:nth-of-type(3) {
+    grid-column: 3;
+    grid-row: 5;
+  }
+
+  main img {
+    width: 85%;
+    margin: auto;
+    padding: 0;
+  }
+
+  div#tom {
+    text-align: center;
+  }
+
+  main img:nth-of-type(4) {
+    grid-column: 1;
+  }
+
+  div#dinoman {
+  grid-column: 2 /span 2;
+  text-align: left;
+  padding-top: 50px;
+  }
+}

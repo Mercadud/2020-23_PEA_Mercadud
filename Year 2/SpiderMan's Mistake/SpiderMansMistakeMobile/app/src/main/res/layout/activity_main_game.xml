@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameActivity">
+
+    <ImageView
+        android:id="@+id/spederDie"
+        android:layout_width="334dp"
+        android:layout_height="312dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.05"
+        app:srcCompat="@drawable/_6" />
+
+    <TableLayout
+        android:id="@+id/letterHolder"
+        android:layout_width="325dp"
+        android:layout_height="204dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spederDie"
+        app:layout_constraintVertical_bias="0.666">
+
+        <TableRow
+            android:id="@+id/tr1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center" />
+
+        <TableRow
+            android:id="@+id/tr2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center" />
+
+        <TableRow
+            android:id="@+id/tr3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center" />
+
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/word"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/quicksand_medium"
+        android:text="______________________________"
+        android:textAlignment="center"
+        android:textSize="19sp"
+        app:layout_constraintBottom_toTopOf="@+id/letterHolder"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spederDie" />
+
+    <TextView
+        android:id="@+id/livesRemaining"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="66"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

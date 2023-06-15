@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="contract_suite" directorySegmentName="seg_0" id="A61B6055-8629-988B-2E14-E37255AFDA74">
+<createdBy>2082054</createdBy>
+<createdTime>2021-09-14 18:30:47 UTC</createdTime>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<engineerTo>
+<item key="48788689-91B6-4782-1B02-9EB69D36F538" value="true"/>
+</engineerTo>
+<sourcePk>CAAA5EAA-01FA-078E-759E-DA4D2F40534A</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>reserves</nameOnSource>
+<nameOnTarget>is reserved by</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>3D744012-34D2-2291-0787-CB6253F60C5B</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>7E08CE92-0D85-07C1-A8D3-5FA510166A6A</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

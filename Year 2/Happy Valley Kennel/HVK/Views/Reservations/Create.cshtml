@@ -1,0 +1,132 @@
+﻿@model HVK.Models.PetReservation
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Pet Reservation</h4>
+<hr />
+
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <h4> Seletect Pet:</h4>
+            <div class="wrapper2">
+                <div class="row">
+                    <div class="col-8">
+                        <label asp-for="PetId" class="control-label">Select a pet</label>
+                        <div class="resServiceWrapper">
+                            @foreach (var pet in (List<Pet>
+                          )ViewData["Pets"])
+                            {
+                                <div class="form-control">
+                                    <input type="radio" asp-for="PetId" value="@pet.PetId" id="@pet.PetId" />
+                                    <label for="@pet.PetId" class="control-label">@pet.Name</label>
+                                </div>
+
+                            }
+                        </div>
+
+                        <span asp-validation-for="PetId" class="text-danger"></span>
+
+
+                    </div>
+                </div>
+            </div>
+
+            <h4> Seletect Date:</h4>
+            <div class="wrapper2">
+                <div class="row">
+                    <div class="col-8">
+                        <label asp-for="Reservation.StartDate" class="control-label"></label>
+                        <input asp-for="Reservation.StartDate" class="form-control" />
+                        <span asp-validation-for="Reservation.StartDate" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-8">
+                        <label asp-for="Reservation.EndDate" class="control-label"></label>
+                        <input asp-for="Reservation.EndDate" class="form-control" />
+                        <span asp-validation-for="Reservation.EndDate" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+
+            <h4> Service:</h4>
+            <div class="wrapper2">
+                <label asp-for="PetReservationServices" class="control-label">Services</label>
+                <div class="resServiceWrapper">
+                    @foreach (var service in (List<Service>
+                   )ViewData["Services"])
+                    {
+                        <div class="form-grid">
+                            <input type="checkbox" value="@service.ServiceDescription" name="PetReservationService" id="@service.ServiceDescription" />
+                            <label for="@service.ServiceDescription" class="control-label">@service.ServiceDescription</label>
+                        </div>
+                    }
+                </div>
+
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+
+
+    <h4> Medication:</h4>
+    <div class="wrapper2  container">
+
+        <div class="row">
+            <div class="col">
+                <label asp-for="Medication2.Name" class="control-label"></label>
+                <input asp-for="Medication2.Name" class="form-control" />
+                <span asp-validation-for="Medication2.Name" class="text-danger"></span>
+
+                
+
+                
+
+                
+
+               
+            </div>
+            <div class="col">
+                <label asp-for="Medication2.Dosage" class="control-label"></label>
+                <input asp-for="Medication2.Dosage" class="form-control" />
+                <span asp-validation-for="Medication2.Dosage" class="text-danger"></span>
+               
+
+            </div>
+            <div class="col">
+                <label asp-for="Medication2.EndDate" class="control-label"></label>
+                <input asp-for="Medication2.EndDate" class="form-control" />
+                <span asp-validation-for="Medication2.EndDate" class="text-danger"></span>
+                
+
+
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col">
+                <label asp-for="Medication2.SpecialInstruct" class="control-label"></label>
+                <textarea asp-for="Medication2.SpecialInstruct" class="form-control"></textarea>
+                <span asp-validation-for="Medication2.SpecialInstruct" class="text-danger"></span>
+               
+
+
+            </div>
+
+        </div>
+    </div>
+
+   
+    
+
+<div>
+    <a asp-action="Index" asp-controller="Customers" class="btn-secondary">Back </a>
+</div>
+

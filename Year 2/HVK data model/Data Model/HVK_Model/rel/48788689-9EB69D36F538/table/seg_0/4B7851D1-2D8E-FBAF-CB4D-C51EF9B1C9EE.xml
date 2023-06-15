@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4B7851D1-2D8E-FBAF-CB4D-C51EF9B1C9EE" name="HVK_FOOD">
+<createdBy>mercaman</createdBy>
+<createdTime>2021-10-21 22:22:16 UTC</createdTime>
+<generatorID>358A8999-2768-8982-1C85-28B9F9C9D205</generatorID>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<abbreviation>foo</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="FOOD_ID" id="99D8D741-3765-2E05-0EFA-3FE74078AFF4">
+<createdBy>mercaman</createdBy>
+<createdTime>2021-10-21 22:22:16 UTC</createdTime>
+<generatorID>F84008C6-0899-3BA6-2BCC-AC66F1C6A51B</generatorID>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>B1396B01-8749-B8CA-7262-BB8A7E2A6426</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_foo_FOOD_ID</notNullConstraintName>
+</Column>
+<Column name="FOOD_TYPE" id="F4D07420-2B5E-1A68-8408-5C2B76977278">
+<createdBy>mercaman</createdBy>
+<createdTime>2021-10-21 22:22:16 UTC</createdTime>
+<generatorID>FC51A228-E825-F46A-BA37-F41F2D8F8A54</generatorID>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D58CB42D-C93A-FB41-08BA-42FBD73B9150</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_foo_FOOD_TYPE</notNullConstraintName>
+</Column>
+<Column name="FOOD_VARIETY" id="56091E28-FFDE-1A2C-05C9-3AC980F3F25B">
+<createdBy>mercaman</createdBy>
+<createdTime>2021-10-21 22:22:16 UTC</createdTime>
+<generatorID>F3C60205-9DCE-3E18-5AF2-8BAB864E5005</generatorID>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D58CB42D-C93A-FB41-08BA-42FBD73B9150</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_foo_FOOD_VARIETY</notNullConstraintName>
+</Column>
+<Column name="FOOD_PET_TYPE" id="76E54A1D-E5E0-AF9D-EA37-BD4AB4A5D93E">
+<createdBy>mercaman</createdBy>
+<createdTime>2021-10-21 22:22:16 UTC</createdTime>
+<generatorID>B125519F-6828-F384-E672-D719CC8A7FD9</generatorID>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<constraintName>CK_foo_FOOD_PET_TYPE</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>60370DA6-2E8B-FAAD-DD9D-C6E41300C4CA</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_foo_FOOD_PET_TYPE</notNullConstraintName>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="CCCA8D04-6207-C9FA-B546-049C652FC09D" name="HVK_FOOD_PK">
+<createdBy>mercaman</createdBy>
+<createdTime>2021-10-21 22:22:16 UTC</createdTime>
+<generatorID>4BCA1EED-6930-FE1E-7114-7BA307B38DE7</generatorID>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="99D8D741-3765-2E05-0EFA-3FE74078AFF4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

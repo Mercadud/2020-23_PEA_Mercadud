@@ -1,0 +1,78 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5D9D6674-D220-76C1-E143-C56AA153F52A" name="HVK_SPCEIAL-NOTE">
+<createdBy>mercaman</createdBy>
+<createdTime>2021-10-21 22:22:16 UTC</createdTime>
+<generatorID>DD0F13B2-DDD1-74B1-CED8-777F02CAAE60</generatorID>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<abbreviation>sn</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="pet_pet-PET_ID" id="995D1EB8-E503-674B-9B33-5AC253E621C1">
+<createdBy>mercaman</createdBy>
+<createdTime>2021-10-21 22:22:16 UTC</createdTime>
+<generatorID>66236288-8376-897D-2035-9AB256374824</generatorID>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>B1396B01-8749-B8CA-7262-BB8A7E2A6426</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_sn_pet_pet-PET_ID</notNullConstraintName>
+<associations>
+<colAssociation fkAssociation="53DF8B24-5FBB-153C-C8CE-3B640C710444" referredColumn="E28282A5-9E1C-16AD-861A-9C1A144A4B38"/>
+</associations>
+</Column>
+<Column name="SPECIAL_NOTE_ID" id="9EC193D2-8F53-DFE7-3CB4-8B1F6A9BE7F1">
+<createdBy>mercaman</createdBy>
+<createdTime>2021-10-21 22:22:16 UTC</createdTime>
+<generatorID>341D2A7B-F582-AA99-8BD4-DF39E44051CF</generatorID>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>B1396B01-8749-B8CA-7262-BB8A7E2A6426</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_sn_SPECIAL_NOTE_ID</notNullConstraintName>
+</Column>
+<Column name="SPECIAL_NOTE_DESCRIPTION" id="DBF0B6B4-D4E4-0EB4-9E8F-0F72418A4BE1">
+<createdBy>mercaman</createdBy>
+<createdTime>2021-10-21 22:22:16 UTC</createdTime>
+<generatorID>392CAFEB-93DD-D2D5-8153-75A94D223A7F</generatorID>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT040</logicalDatatype>
+<domain>7D2F2CD8-3976-1FD9-3880-9C41F5F6DE05</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5FE16E1D-7F8F-7AB2-608F-2FEBB154BA8E" name="HVK_SPCEIAL-NOTE_PK">
+<createdBy>mercaman</createdBy>
+<createdTime>2021-10-21 22:22:16 UTC</createdTime>
+<generatorID>477D1BFB-F133-B374-84B8-BA654A16A49C</generatorID>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9EC193D2-8F53-DFE7-3CB4-8B1F6A9BE7F1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B1AAD666-7489-8B48-2500-DC1BE057CE7F" name="sn_pet_FK">
+<createdBy>mercaman</createdBy>
+<createdTime>2021-10-21 22:22:16 UTC</createdTime>
+<generatorID>4438FE2A-AD81-0CD9-8A58-4388397CECD9</generatorID>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="995D1EB8-E503-674B-9B33-5AC253E621C1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

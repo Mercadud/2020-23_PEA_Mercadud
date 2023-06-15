@@ -1,0 +1,130 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F303C253-F6A5-569D-93A1-6B3E547B3BD0" name="HVK_RUN">
+<createdBy>mercaman</createdBy>
+<createdTime>2021-10-21 22:22:16 UTC</createdTime>
+<generatorID>4F89DFD9-972C-E1A8-077C-9D9648257A89</generatorID>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<abbreviation>run</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="res_RESERVATION_ID" id="9420A91D-2C14-99CC-66FE-9314C6F60B35">
+<createdBy>mercaman</createdBy>
+<createdTime>2021-10-21 22:22:16 UTC</createdTime>
+<generatorID>FFA336BE-72D6-E1FA-BAD6-38AC0BC95AE7</generatorID>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>B1396B01-8749-B8CA-7262-BB8A7E2A6426</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_run_res_RESERVATION_ID</notNullConstraintName>
+<associations>
+<colAssociation fkAssociation="734C8B1B-E00C-FB5D-31FB-23A2675F0309" referredColumn="D5F7668D-9D84-ACC5-E834-905B6ADA7737"/>
+</associations>
+</Column>
+<Column name="RUN_ID" id="D0EA2F00-5AD6-5B67-1268-36B52FE023EA">
+<createdBy>mercaman</createdBy>
+<createdTime>2021-10-21 22:22:16 UTC</createdTime>
+<generatorID>08E5F227-B238-14EC-3174-468BD26BAF77</generatorID>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>B1396B01-8749-B8CA-7262-BB8A7E2A6426</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_run_RUN_ID</notNullConstraintName>
+</Column>
+<Column name="RUN_TYPE" id="B60231E7-78C8-4809-F004-E517E5084C1E">
+<createdBy>mercaman</createdBy>
+<createdTime>2021-10-21 22:22:16 UTC</createdTime>
+<generatorID>8A94F993-6B7F-D665-B1F7-835CDB69B4FE</generatorID>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D58CB42D-C93A-FB41-08BA-42FBD73B9150</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_run_RUN_TYPE</notNullConstraintName>
+</Column>
+<Column name="RUN_STATUS" id="914B3704-1DB8-2B77-91D1-C831A413F8A5">
+<createdBy>mercaman</createdBy>
+<createdTime>2021-10-21 22:22:16 UTC</createdTime>
+<generatorID>2E8CC161-010C-A74D-0EDF-DFC700A66653</generatorID>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<constraintName>CK_run_RUN_STATUS</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<listOfValues>
+<valueDef value="Available" description=""/>
+<valueDef value="Broken" description=""/>
+<valueDef value="Cleaning" description=""/>
+<valueDef value="In-Use" description=""/>
+</listOfValues>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_run_RUN_STATUS</notNullConstraintName>
+</Column>
+<Column name="RUN_LOCATION" id="A3A4D5C5-5D10-EFC4-3518-15036EDF324C">
+<createdBy>mercaman</createdBy>
+<createdTime>2021-10-21 22:22:16 UTC</createdTime>
+<generatorID>40154AC6-6406-B918-11A9-D2295B3174F6</generatorID>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<constraintName>CK_run_RUN_LOCATION</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<listOfValues>
+<valueDef value="Back" description=""/>
+<valueDef value="Front" description=""/>
+<valueDef value="Roadside" description=""/>
+</listOfValues>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_run_RUN_LOCATION</notNullConstraintName>
+</Column>
+<Column name="RUN_COVERED" id="74675D58-D3C0-0FA0-9A5F-7E4B29BBFE56">
+<createdBy>mercaman</createdBy>
+<createdTime>2021-10-21 22:22:16 UTC</createdTime>
+<generatorID>BF093DEF-C83C-4375-70E0-A11A43298E81</generatorID>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<constraintName>CK_run_RUN_COVERED</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT034</logicalDatatype>
+<domain>229CC33A-C72C-6B01-2FF6-6F6630E9EB40</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_run_RUN_COVERED</notNullConstraintName>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B2767527-543A-0ECF-E59D-8F226C0F4B7D" name="HVK_RUN_PK">
+<createdBy>mercaman</createdBy>
+<createdTime>2021-10-21 22:22:16 UTC</createdTime>
+<generatorID>174E895B-3FD2-EC6F-FD57-0524F68777D3</generatorID>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D0EA2F00-5AD6-5B67-1268-36B52FE023EA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A4EFC671-D678-32F1-5893-65398A45E171" name="run_res_FK">
+<createdBy>mercaman</createdBy>
+<createdTime>2021-10-21 22:22:16 UTC</createdTime>
+<generatorID>6A68F13A-E6FB-D7A9-8690-5FAE349CCFDA</generatorID>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9420A91D-2C14-99CC-66FE-9314C6F60B35"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

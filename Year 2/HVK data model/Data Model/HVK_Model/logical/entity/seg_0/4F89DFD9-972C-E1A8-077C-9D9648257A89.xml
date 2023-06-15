@@ -1,0 +1,121 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="4F89DFD9-972C-E1A8-077C-9D9648257A89" name="RUN">
+<createdBy>2082054</createdBy>
+<createdTime>2021-09-14 18:20:35 UTC</createdTime>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<engineerTo>
+<item key="48788689-91B6-4782-1B02-9EB69D36F538" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<shortName>run</shortName>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="RESERVATION_ID" id="FFA336BE-72D6-E1FA-BAD6-38AC0BC95AE7">
+<createdBy>2088419</createdBy>
+<createdTime>2021-09-30 20:38:23 UTC</createdTime>
+<generatorID>6A68F13A-E6FB-D7A9-8690-5FAE349CCFDA</generatorID>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<engineerTo>
+<item key="48788689-91B6-4782-1B02-9EB69D36F538" value="true"/>
+</engineerTo>
+<referedAttribute>8EF9DFF3-7E9C-12FF-0AAF-AC0DED671B8B</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>B1396B01-8749-B8CA-7262-BB8A7E2A6426</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="RUN_ID" id="08E5F227-B238-14EC-3174-468BD26BAF77">
+<createdBy>2088419</createdBy>
+<createdTime>2021-09-30 20:39:38 UTC</createdTime>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<engineerTo>
+<item key="48788689-91B6-4782-1B02-9EB69D36F538" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>B1396B01-8749-B8CA-7262-BB8A7E2A6426</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="RUN_TYPE" id="8A94F993-6B7F-D665-B1F7-835CDB69B4FE">
+<createdBy>2088419</createdBy>
+<createdTime>2021-09-30 20:39:45 UTC</createdTime>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<engineerTo>
+<item key="48788689-91B6-4782-1B02-9EB69D36F538" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D58CB42D-C93A-FB41-08BA-42FBD73B9150</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="RUN_STATUS" id="2E8CC161-010C-A74D-0EDF-DFC700A66653">
+<createdBy>2088419</createdBy>
+<createdTime>2021-09-30 20:39:55 UTC</createdTime>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<engineerTo>
+<item key="48788689-91B6-4782-1B02-9EB69D36F538" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<listOfValues>
+<valueDef value="Available" description=""/>
+<valueDef value="Broken" description=""/>
+<valueDef value="Cleaning" description=""/>
+<valueDef value="In-Use" description=""/>
+</listOfValues>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="RUN_LOCATION" id="40154AC6-6406-B918-11A9-D2295B3174F6">
+<createdBy>2088419</createdBy>
+<createdTime>2021-10-14 18:37:02 UTC</createdTime>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<engineerTo>
+<item key="48788689-91B6-4782-1B02-9EB69D36F538" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<listOfValues>
+<valueDef value="Back" description=""/>
+<valueDef value="Front" description=""/>
+<valueDef value="Roadside" description=""/>
+</listOfValues>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="RUN_COVERED" id="BF093DEF-C83C-4375-70E0-A11A43298E81">
+<createdBy>2088419</createdBy>
+<createdTime>2021-10-14 18:38:03 UTC</createdTime>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<engineerTo>
+<item key="48788689-91B6-4782-1B02-9EB69D36F538" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT034</logicalDatatype>
+<domain>229CC33A-C72C-6B01-2FF6-6F6630E9EB40</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="174E895B-3FD2-EC6F-FD57-0524F68777D3" name="RUN PK">
+<createdBy>2088419</createdBy>
+<createdTime>2021-09-30 20:39:43 UTC</createdTime>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<engineerTo>
+<item key="48788689-91B6-4782-1B02-9EB69D36F538" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>08E5F227-B238-14EC-3174-468BD26BAF77</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

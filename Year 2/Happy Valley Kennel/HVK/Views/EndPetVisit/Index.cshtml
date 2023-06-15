@@ -1,0 +1,95 @@
+﻿@model HVK.Models.Customer
+
+@{
+    ViewData["Title"] = "End Pet Visit: Reservation Summary";
+}
+
+
+
+
+<div class="container">
+    <div class="row container_box mt-3 mb-3">
+        <div class="col bg-dark text-light">
+            Review Reservation Information
+        </div>
+        <div class="col bg-light text-dark">
+            Print Invoice
+        </div>
+    </div>
+
+    <div class="multiForm container">
+        <div class="text-uppercase container mt-2">
+
+            <div class="row container_box mb-3">
+                <div class="col-6">
+                    Customer:<br />
+                    Name: @Model.FirstName @Model.LastName  <br />
+                    Phone: @Model.Phone.ToString()  <br />
+                    Address: @Model.Street
+                </div>
+                <div class="col-6">
+                    Emergency Contact <br />
+                    Name: @Model.EmergencyContactFirstName @Model.EmergencyContactLastName <br />
+                    Phone: @Model.EmergencyContactPhone
+                </div>
+            </div>
+            <div class="row container-fluid card mb-3 container_box">
+                <div class="row">
+                    <div class="col-12">
+                        Reservation:
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4">
+                        Start Date: @*@ViewBag.Reservation.StartDate.ToString("yyyy-MM-dd")*@
+                    </div>
+                    <div class="col-4">
+                        End Date: @*@ViewBag.Reservation.EndDate.ToString("yyyy-MM-dd")*@
+                    </div>
+                    <div class="col-4">
+                        Number of Days: @*@ViewBag.Reservation.EndDate.Subtract(@ViewBag.Reservation.StartDate).Days*@
+                    </div>
+                </div>
+            </div>
+            <h2>Pets:</h2>
+            <div class="card h-100 overflow-auto container_box_2 mb-3">
+
+                <div class="card container_box p-2 m-2">
+                    <div class=" d-flex justify-content-between">
+                        <h4>@Model.Pets.FirstOrDefault().Name</h4>
+                        <div>
+                            <p>Vaccinations Unchecked! <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#vaccination">Check Vaccinations</button></p>
+                        </div>
+                    </div>
+
+                    <p>Breed: @Model.Pets.FirstOrDefault().Breed</p>
+                    <p>
+                        Size: @Model.Pets.FirstOrDefault().DogSize
+                    </p>
+                    <p>
+                        Sex:@Model.Pets.FirstOrDefault().Gender
+                    </p>
+                    <div class="container-fluid">
+                        <div class="d-flex flex-row-reverse col-12">
+                            <a class="btn btn-link">Edit</a>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="text-center">End of Pet List</p>
+            </div>
+
+            <div class="container">
+                <div class="d-flex flex-row-reverse col-12">
+
+
+                    @Html.ActionLink("Next", "Invoice", "EndPetVisit", null, new { @class = "btn-secondary rounded float-end order-0 mx-1 px-2 bg-primary" })
+                    @Html.ActionLink("Cancel", "Index", "Clerk", null, new { @class = "btn-secondary rounded float-end order-0 mx-1 px-2" })
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+

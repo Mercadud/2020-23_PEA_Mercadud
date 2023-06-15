@@ -1,0 +1,309 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+
+:root {
+  --font_fam: "Ubuntu", sans-serif;
+  --main-colour: #355a9b;
+  --logo_colour: #1f3681;
+}
+
+body {
+  font-family: var(--font_fam);
+  color: black;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  max-width: 768px;
+  margin: auto;
+  background-color: #f8f8ff;
+}
+
+.logo {
+  margin: auto;
+  width: 90%;
+}
+
+header {
+  margin: auto;
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.choices {
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+  font-size: 1.5em;
+  background-color: var(--main-colour);
+  border-radius: 10px;
+  width: 95%;
+  margin: 5px 0px;
+  padding: 10px 0px;
+}
+
+.choices:hover {
+  color: white;
+  background-color: var(--logo_colour);
+}
+
+footer {
+  background-color: var(--logo_colour);
+  max-width: 100%;
+  color: white;
+  padding-left: 1.2em;
+  padding-top: 3px;
+  padding-bottom: 10px;
+  border-top: solid black;
+}
+
+.footerChoices {
+  color: white;
+  text-decoration: none;
+}
+
+.footerChoices:checked {
+  color: black;
+}
+
+footer ul li {
+  padding: 5px;
+  color: black;
+  display: inline;
+}
+
+p {
+  font-size: 1.2em;
+  word-spacing: 0.2em;
+}
+
+a {
+  text-decoration: none;
+  color: var(--main-colour);
+}
+
+#h1center {
+  text-align: center;
+}
+
+#legend {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5em;
+  margin: auto;
+}
+
+dt {
+  font-weight: bold;
+  font-size: 1.5em;
+  margin: auto;
+}
+
+dd {
+  margin: auto;
+  padding: 5px;
+}
+
+dl {
+  text-align: center;
+}
+
+#email > input,
+#name > input {
+  width: 30ch;
+}
+
+input#phone {
+  width: 25ch;
+}
+
+#submit {
+  margin: auto;
+  text-align: center;
+}
+
+#submit input {
+  background-color: var(--logo_colour);
+  color: white;
+  padding: 10px 25px;
+  margin: 5px;
+}
+
+label[for="Other"],
+input#Other {
+  float: left;
+}
+
+fieldset {
+  border: none;
+}
+
+label {
+  font-size: 1.1em;
+}
+
+textarea {
+  width: 100%;
+}
+
+#why label,
+#why input {
+  margin-top: 10px;
+}
+
+table.mobile {
+  margin: auto;
+  margin-bottom: 10px;
+  border: solid thin var(--main-colour);
+  border-collapse: collapse;
+}
+
+table.mobile td,
+table.mobile th {
+  border: solid thin var(--main-colour);
+  padding: 5px;
+}
+
+dd.desktop, table.desktop {
+  display: none;
+}
+
+#find {
+    text-align: center;
+    padding-top:5px;
+}
+
+#find label, #find input {
+    padding: 5px;
+    margin-top: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .wrapper {
+    max-width: 1000px;
+  }
+
+  body {
+    background-image: url(../images/Home_Image.jpg);
+    background-repeat: no-repeat;
+    background-color: var(--main-colour);
+  }
+
+  .logo {
+    float: left;
+    width: auto;
+    margin-right: 400px;
+  }
+
+  .choices {
+    width: 19%;
+  }
+
+  header ul li {
+    display: inline;
+  }
+
+  footer {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
+  }
+
+  p {
+    width: 50%;
+  }
+
+  #name > input,
+  #phone > input,
+  #email > input {
+    width: 95% !important;
+  }
+
+  form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr auto auto;
+  }
+
+  div#why {
+    margin-left: 0;
+    grid-column: 2;
+    grid-row: 1 / span 5;
+    border-left: solid var(--main-colour) thin;
+    padding-left: 10px;
+  }
+
+  div#why h1 {
+    margin: 0;
+    padding: 0;
+  }
+  div#phone {
+    grid-row: 2;
+  }
+
+  div#email {
+    grid-column: 1;
+    grid-row: 3;
+  }
+
+  textarea {
+    width: 82%;
+  }
+
+  fieldset {
+    border: solid thin var(--main-colour);
+  }
+
+  #why label,
+  #why input {
+    margin-top: 0;
+  }
+
+  #drop {
+    grid-column: 1;
+    grid-row: 4;
+  }
+
+  #submit {
+    grid-row: 6;
+    grid-column: 1 / span 2;
+    margin: auto;
+  }
+
+  div#find {
+      grid-row: 5;
+      grid-column: 1/ span 2;
+  }
+
+  table.mobile, dd.mobile {
+    display: none !important;
+  }
+
+  table.desktop {
+    display: table;
+    margin: auto;
+    margin-bottom: 10px;
+    border: solid thin var(--main-colour);
+    border-collapse: collapse;
+  }
+  
+  table.desktop td,
+  table.desktop th {
+    border: solid thin var(--main-colour);
+    padding: 5px;
+  }
+
+  dd.desktop {
+    display: block;
+  }
+
+  #find {
+      text-align: left;
+      padding: 0;
+  }
+}

@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="HVK_Model" id="6A29418F-A434-97C3-91E2-C75B81A09034" version="3.5">
+<createdBy>2082054</createdBy>
+<createdTime>2021-09-14 18:17:27 UTC</createdTime>
+<ownerDesignName>HVK</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>6A29418F-A434-97C3-91E2-C75B81A09034</designId>
+</OSDM_Design>

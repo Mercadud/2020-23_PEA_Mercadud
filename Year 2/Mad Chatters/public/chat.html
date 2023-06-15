@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/chat.css" type="text/css" />
+    <title>Mad Chatters</title>
+  </head>
+  <body>
+    <div id="welcomeScreen">
+      <h1>Welcome To The Mad Chatters!</h1>
+      <div class="middle">
+        <p for="username">Please Enter a Username to Continue!</p>
+        <br />
+        <input
+          type="text"
+          id="usernameInput"
+          name="username"
+          autocomplete="off"
+        />
+        <button id="inputUsernameBtn">NEXT</button>
+        <p class="error"></p>
+      </div>
+    </div>
+    <div id="info">
+      <input
+        type="image"
+        src="./icons/close_white_24dp.svg"
+        alt="close side bar"
+        id="sideBarCloser"
+      />
+      <div id="users">
+        <h1>Users</h1>
+        <div class="content"></div>
+      </div>
+      <div id="invites">
+        <h1>Invites</h1>
+        <div class="content"></div>
+      </div>
+    </div>
+    <div id="game">
+      <h1>Game</h1>
+      <div class="content"></div>
+    </div>
+    <main>
+      <header>
+        <input
+          type="image"
+          src="./icons/menu_white_24dp.svg"
+          alt="open side bar"
+          id="sideBarOpener"
+        />
+        <h1>Room Name</h1>
+      </header>
+      <div id="MessagesBox"></div>
+      <div id="chatBar">
+        <input type="text" id="textInput" autocomplete="off" />
+        <input
+          type="image"
+          src="./icons/send_white_24dp.svg"
+          alt="send message"
+          id="sendMessageBTN"
+        />
+      </div>
+    </main>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="./scripts/chatClient.js"></script>
+  </body>
+</html>

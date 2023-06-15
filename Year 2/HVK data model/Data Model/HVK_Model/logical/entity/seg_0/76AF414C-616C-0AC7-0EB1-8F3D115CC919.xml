@@ -1,0 +1,157 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="76AF414C-616C-0AC7-0EB1-8F3D115CC919" name="CUSTOMER">
+<createdBy>2082054</createdBy>
+<createdTime>2021-09-14 18:20:06 UTC</createdTime>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<engineerTo>
+<item key="48788689-91B6-4782-1B02-9EB69D36F538" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<shortName>cus</shortName>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="CUSTOMER_ID" id="25EA18CE-5C13-4AA1-115A-0739DD08C220">
+<createdBy>2088419</createdBy>
+<createdTime>2021-09-30 20:33:14 UTC</createdTime>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<engineerTo>
+<item key="48788689-91B6-4782-1B02-9EB69D36F538" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>B1396B01-8749-B8CA-7262-BB8A7E2A6426</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CUSTOMER_FIRST_NAME" id="2FC30E53-9450-E858-4648-86BBD549712D">
+<createdBy>2088419</createdBy>
+<createdTime>2021-09-30 20:33:26 UTC</createdTime>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<engineerTo>
+<item key="48788689-91B6-4782-1B02-9EB69D36F538" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D58CB42D-C93A-FB41-08BA-42FBD73B9150</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CUSTOMER_LAST_NAME" id="D8E628DF-804A-227A-1364-BA064B4A1768">
+<createdBy>2088419</createdBy>
+<createdTime>2021-09-30 20:33:37 UTC</createdTime>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<engineerTo>
+<item key="48788689-91B6-4782-1B02-9EB69D36F538" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D58CB42D-C93A-FB41-08BA-42FBD73B9150</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CUSTOMER_PHONE_NUMBER" id="62B93E22-8221-4C17-5B16-564506D5356E">
+<createdBy>2088419</createdBy>
+<createdTime>2021-09-30 20:33:59 UTC</createdTime>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<engineerTo>
+<item key="48788689-91B6-4782-1B02-9EB69D36F538" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>8EAE4EC5-3AB2-C32D-8595-B53EB406E040</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CUSTOMER_EMERGENCY_CONTACT_NAME" id="E93EEAF2-2B65-F18C-BFEA-DAE1DE9ED584">
+<createdBy>2088419</createdBy>
+<createdTime>2021-09-30 20:34:11 UTC</createdTime>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<engineerTo>
+<item key="48788689-91B6-4782-1B02-9EB69D36F538" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D58CB42D-C93A-FB41-08BA-42FBD73B9150</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CUSTOMER_EMERGENCY_CONTACT_NUMBER" id="E7ADBD8A-07E9-925A-BEDD-6454FCA775AA">
+<createdBy>2088419</createdBy>
+<createdTime>2021-09-30 20:34:45 UTC</createdTime>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<engineerTo>
+<item key="48788689-91B6-4782-1B02-9EB69D36F538" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>8EAE4EC5-3AB2-C32D-8595-B53EB406E040</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CUSTOMER_STREET" id="5B2FE117-C1A2-A24F-725C-48096001D5BE">
+<createdBy>2088419</createdBy>
+<createdTime>2021-10-14 18:50:30 UTC</createdTime>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<engineerTo>
+<item key="48788689-91B6-4782-1B02-9EB69D36F538" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>0EC11638-B8BF-1EBF-475B-D37D833FA774</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CUSTOMER_PROVINCE" id="A211FBCF-8A8F-530C-84C8-9A220EB81CDB">
+<createdBy>2088419</createdBy>
+<createdTime>2021-10-14 18:50:40 UTC</createdTime>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<engineerTo>
+<item key="48788689-91B6-4782-1B02-9EB69D36F538" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>81A76DF1-35CC-32BC-A207-91437743C36B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CUSTOMER_POSTAL_CODE" id="37368E9B-02F9-6591-DFEB-0415B52AE399">
+<createdBy>2088419</createdBy>
+<createdTime>2021-10-14 18:51:00 UTC</createdTime>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<engineerTo>
+<item key="48788689-91B6-4782-1B02-9EB69D36F538" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>0E34CB4B-E156-1A78-1A04-F3EE205A1FF3</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CUSTOMER_EMAIL" id="E3B06C32-62EC-39AB-8B58-3BAF2FA275F8">
+<createdBy>2088419</createdBy>
+<createdTime>2021-10-14 18:51:25 UTC</createdTime>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<engineerTo>
+<item key="48788689-91B6-4782-1B02-9EB69D36F538" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>70C83F90-120E-5713-641E-742B84E78FF8</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="A4F194CF-4F64-CC27-3DBB-234EF1D489D5" name="CUSTOMER PK">
+<createdBy>2088419</createdBy>
+<createdTime>2021-09-30 20:33:23 UTC</createdTime>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<engineerTo>
+<item key="48788689-91B6-4782-1B02-9EB69D36F538" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>25EA18CE-5C13-4AA1-115A-0739DD08C220</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

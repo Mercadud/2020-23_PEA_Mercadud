@@ -1,0 +1,27 @@
+<div class="container">
+    <form asp-action="Search" asp-controller="Clerks" method="get">
+        <input type="text" name="search" placeholder="search customer" class="form-control col-12">
+    </form>
+</div>
+
+<div class="card container">
+    <table>
+        <thead>
+        <th scope="col">Name</th>
+        <th scope="col">Actions</th>
+        </thead>
+        <tbody>
+        @foreach (Customer i in ViewBag.Customers)
+        {
+            <tr>
+                <td>@i.FirstName @i.LastName</td>
+                <td>
+                    <a asp-action="Details" asp-controller="Customers" asp-route-id="@i.CustomerId">Edit</a> |
+                    <a asp-action="Delete" asp-controller="Customers" asp-route-id="@i.CustomerId">Delete</a>
+                </td>
+            </tr>
+        }
+        </tbody>
+    </table>
+
+</div>

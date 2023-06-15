@@ -1,0 +1,102 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="71C7BAF0-3CC7-B7F8-3A69-5F785AFB1FD0" name="PET FOOD">
+<createdBy>2088419</createdBy>
+<createdTime>2021-10-14 18:41:27 UTC</createdTime>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<engineerTo>
+<item key="48788689-91B6-4782-1B02-9EB69D36F538" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<shortName>pf</shortName>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="FOOD_ID" id="B52FED33-6A68-347A-EE2A-3B62F39366EB">
+<createdBy>2088419</createdBy>
+<createdTime>2021-10-14 18:42:41 UTC</createdTime>
+<generatorID>8F9FE005-F1B5-719D-A1FE-FF686D3ADB7C</generatorID>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<engineerTo>
+<item key="48788689-91B6-4782-1B02-9EB69D36F538" value="true"/>
+</engineerTo>
+<referedAttribute>F84008C6-0899-3BA6-2BCC-AC66F1C6A51B</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>B1396B01-8749-B8CA-7262-BB8A7E2A6426</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PET_ID" id="36AE114F-AEA9-B017-103E-E8E42D1EEB29">
+<createdBy>2088419</createdBy>
+<createdTime>2021-10-14 18:42:48 UTC</createdTime>
+<generatorID>8FDE37D3-21B2-53AD-B90D-1EFAB7647CB0</generatorID>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<engineerTo>
+<item key="48788689-91B6-4782-1B02-9EB69D36F538" value="true"/>
+</engineerTo>
+<referedAttribute>425B96D0-193D-A609-E110-48A8C8843E1F</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>B1396B01-8749-B8CA-7262-BB8A7E2A6426</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="RESERVATION_ID" id="F6B5E749-9FBD-5217-8DC1-031F6B26DE6F">
+<createdBy>2088419</createdBy>
+<createdTime>2021-10-14 18:42:48 UTC</createdTime>
+<generatorID>8FDE37D3-21B2-53AD-B90D-1EFAB7647CB0</generatorID>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<engineerTo>
+<item key="48788689-91B6-4782-1B02-9EB69D36F538" value="true"/>
+</engineerTo>
+<referedAttribute>06EC1438-6C21-1A52-EAF0-380EC5497307</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>B1396B01-8749-B8CA-7262-BB8A7E2A6426</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="FOOD_FREQUENCY" id="336098CE-BB6A-B242-1332-D00B37A27E74">
+<createdBy>2088419</createdBy>
+<createdTime>2021-10-14 18:43:18 UTC</createdTime>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<engineerTo>
+<item key="48788689-91B6-4782-1B02-9EB69D36F538" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>57B3F91A-FC02-2321-BAED-5C24B0AF0C33</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="FOOD_QUANTITY" id="BC0871C9-A05F-F66E-40B9-EDBFFE5E8FD3">
+<createdBy>2088419</createdBy>
+<createdTime>2021-10-14 18:43:32 UTC</createdTime>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<engineerTo>
+<item key="48788689-91B6-4782-1B02-9EB69D36F538" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>57B3F91A-FC02-2321-BAED-5C24B0AF0C33</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="D56533D7-1819-BF1E-25B8-AE7870828035" name="PET FOOD PK">
+<createdBy>2088419</createdBy>
+<createdTime>2021-10-14 18:42:41 UTC</createdTime>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<engineerTo>
+<item key="48788689-91B6-4782-1B02-9EB69D36F538" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>B52FED33-6A68-347A-EE2A-3B62F39366EB</attributeRef>
+<attributeRef>36AE114F-AEA9-B017-103E-E8E42D1EEB29</attributeRef>
+<attributeRef>F6B5E749-9FBD-5217-8DC1-031F6B26DE6F</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

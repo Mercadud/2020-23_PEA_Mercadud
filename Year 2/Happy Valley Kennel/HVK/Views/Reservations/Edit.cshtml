@@ -1,0 +1,106 @@
+﻿@model HVK.Models.PetReservation
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit Reservation</h1>
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Reservation.StartDate" class="control-label"></label>
+                <input asp-for="Reservation.StartDate" class="form-control" />
+                <span asp-validation-for="Reservation.StartDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Reservation.EndDate" class="control-label"></label>
+                <input asp-for="Reservation.EndDate" class="form-control" />
+                <span asp-validation-for="Reservation.EndDate" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+
+                <label asp-for="PetReservationServices" class="control-label">Services</label>
+                <div class="resServiceWrapper">
+                    @{
+                        bool hasWalk = false;
+                        bool hasMedi = false;
+                        bool hasPlaytime = false;
+                        if (ViewData["PetServices"] != null)
+                        {
+
+                            @foreach (var petService in (List<PetReservationService>)ViewData["PetServices"])
+                            {
+                                if (petService.ServiceId == 2)
+                                {
+                                    hasWalk = true;
+                                }
+                                else if (petService.ServiceId == 4)
+                                {
+                                    hasMedi = true;
+                                }
+                                else if (petService.ServiceId == 5)
+                                {
+                                    hasPlaytime = true;
+                                }
+                            }
+                        }
+                    }
+                    @foreach (var service in (List<Service>)ViewData["Services"])
+                    {
+                        <div class="form-grid">
+                            @if (service.ServiceId == 2)
+                            {
+                                <input type="checkbox" value="@service.ServiceDescription" name="PetReservationService" id="@service.ServiceDescription" checked="@hasWalk" />
+                            }
+                            else if (service.ServiceId == 4)
+                            {
+                                <input type="checkbox" value="@service.ServiceDescription" name="PetReservationService" id="@service.ServiceDescription" checked="@hasMedi" />
+                            }
+                            else if (service.ServiceId == 5)
+                            {
+                                <input type="checkbox" value="@service.ServiceDescription" name="PetReservationService" id="@service.ServiceDescription" checked="@hasPlaytime" />
+                            }
+                            <label for="@service.ServiceDescription" class="control-label">@service.ServiceDescription</label>
+                        </div>
+                    }
+                </div>
+
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+    <div class="col-md-6">
+        <div class="form-group">
+            <h4>Add Medication</h4>
+            <label asp-for="Medication2.Name" class="control-label"></label>
+            <input asp-for="Medication2.Name" class="form-control" />
+            <span asp-validation-for="Medication2.Name" class="text-danger"></span>
+
+            <label asp-for="Medication2.Dosage" class="control-label"></label>
+            <input asp-for="Medication2.Dosage" class="form-control" />
+            <span asp-validation-for="Medication2.Dosage" class="text-danger"></span>
+
+            <label asp-for="Medication2.EndDate" class="control-label">End Date</label>
+            <input asp-for="Medication2.EndDate" class="form-control" />
+            <span asp-validation-for="Medication2.EndDate" class="text-danger"></span>
+
+            <label asp-for="Medication2.SpecialInstruct" class="control-label">Special Instructions</label>
+            <textarea asp-for="Medication2.SpecialInstruct" class="form-control"></textarea>
+            <span asp-validation-for="Medication2.SpecialInstruct" class="text-danger"></span>
+        </div>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+

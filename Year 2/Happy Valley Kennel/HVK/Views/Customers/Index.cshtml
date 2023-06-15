@@ -1,0 +1,86 @@
+@model HVK.Models.Customer
+
+@{
+    ViewData["Title"] = "Customer Home Page";
+    Layout = "_Layout";
+}
+
+<h1>Welcome back! @Model.FirstName  @Model.LastName</h1>
+
+<hr />
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h2>Reservations</h2>
+        </div>
+        <div class="col">
+            @*<button class="btn btn-secondary">
+                Make Reservation
+            </button>*@
+            @Html.ActionLink("Make Reservation", "Create", "Reservations", new { id = "" }, new { @class = "btn btn-secondary" })
+        </div>
+        <div class="col offset-md-1">
+            <h2>Pets</h2>
+        </div>
+        <div class="col">
+            @Html.ActionLink("Add Pet", "Create", "Pets", new { id = "" }, new { @class = "btn btn-secondary" })
+        </div>
+        <hr />
+    </div>
+    <div class="row">
+        <div class="col customer-homepage-section ">
+            @if (ViewBag.Resersavtion != null) {
+                @foreach (var item in ViewBag.Reservations) {<p>
+                        ID :  @item.ReservationId
+                    </p>
+                    <p>
+                        Start date:  @item.StartDate.ToString("yyyy-MM-dd")
+                    </p>
+                    <p>
+                        End date:  @item.EndDate.ToString("yyyy-MM-dd")
+                    </p>
+                    <p>
+                        Status: @item.Status
+                    </p>
+                    <p>
+                        <button type="reset" class="btn btn-secondary">Cancel</button>
+                       @* <button class="btn btn-secondary">Edit</button>*@
+                        @Html.ActionLink("Edit", "Edit", "Reservation", new { id = @item.ReservationId }, new { @class = "btn btn-secondary" })
+                    </p>
+                    <hr />
+                }
+            } else {
+                <p>No Reservations</p>
+            }
+
+
+        </div>
+
+        <div class="col offset-md-1 customer-homepage-section">
+
+            @if (ViewBag.Pets != null) {
+                @foreach (var item in ViewBag.Pets) {
+                    <h3> @item.Name</h3>
+                    <p>  Breed: @item.Breed</p>
+                    <p>  Size: @item.DogSize</p>
+                    <p>  Gender: @item.Gender</p>
+                    <p>
+                        @Html.ActionLink("Remove", "Delete", "Pets", new { id = @item.PetId }, new { @class = "btn btn-secondary" })
+                        @Html.ActionLink("Edit", "Edit", "Pets", new { id = @item.PetId }, new { @class = "btn btn-secondary" })
+                    </p>
+                    <hr />
+
+                }
+            } else {
+                <p>No Pets</p>
+            }
+        </div>
+    </div>
+</div>
+
+
+
+
+
+

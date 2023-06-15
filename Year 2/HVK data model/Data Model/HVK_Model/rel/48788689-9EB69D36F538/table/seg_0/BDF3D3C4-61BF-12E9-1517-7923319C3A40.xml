@@ -1,0 +1,94 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BDF3D3C4-61BF-12E9-1517-7923319C3A40" name="HVK_PET-RESERVATION">
+<createdBy>mercaman</createdBy>
+<createdTime>2021-10-21 22:22:16 UTC</createdTime>
+<generatorID>DFACF7ED-3A88-EAAE-9DE9-717990D3703E</generatorID>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<abbreviation>pr</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="pet_pet-PET_ID" id="1848AC43-4872-9B30-E4A6-BBFABD2016B4">
+<createdBy>mercaman</createdBy>
+<createdTime>2021-10-21 22:22:16 UTC</createdTime>
+<generatorID>425B96D0-193D-A609-E110-48A8C8843E1F</generatorID>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>B1396B01-8749-B8CA-7262-BB8A7E2A6426</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_pr_pet_pet-PET_ID</notNullConstraintName>
+<associations>
+<colAssociation fkAssociation="B9C3A0CE-B72A-34BA-C454-307FE499B137" referredColumn="E28282A5-9E1C-16AD-861A-9C1A144A4B38"/>
+</associations>
+</Column>
+<Column name="res_RESERVATION_ID" id="7FEB309E-89C7-9099-CA17-3CFAB729D569">
+<createdBy>mercaman</createdBy>
+<createdTime>2021-10-21 22:22:16 UTC</createdTime>
+<generatorID>06EC1438-6C21-1A52-EAF0-380EC5497307</generatorID>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>B1396B01-8749-B8CA-7262-BB8A7E2A6426</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_pr_res_RESERVATION_ID</notNullConstraintName>
+<associations>
+<colAssociation fkAssociation="5BE185DB-72DC-1E07-2E10-765AADEABDF2" referredColumn="D5F7668D-9D84-ACC5-E834-905B6ADA7737"/>
+</associations>
+</Column>
+<Column name="PET_RESERVATION_NUMBER" id="98F485FB-CE0E-1F25-1464-7A2D9CE92A9D">
+<createdBy>mercaman</createdBy>
+<createdTime>2021-10-21 22:22:16 UTC</createdTime>
+<generatorID>3F5EDB68-9E54-2AB4-E9C9-624797261D26</generatorID>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>B1396B01-8749-B8CA-7262-BB8A7E2A6426</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A923EAFE-CA1B-92C6-5900-03C5026A21A8" name="HVK_PET-RESERVATION_PK">
+<createdBy>mercaman</createdBy>
+<createdTime>2021-10-21 22:22:16 UTC</createdTime>
+<generatorID>0AAD6DAC-E91F-BF4B-E487-F4A6C6EA9269</generatorID>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1848AC43-4872-9B30-E4A6-BBFABD2016B4"/>
+<colUsage columnID="7FEB309E-89C7-9099-CA17-3CFAB729D569"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="24C00495-226C-8FED-0516-21EE338EBEC5" name="pr_pet_FK">
+<createdBy>mercaman</createdBy>
+<createdTime>2021-10-21 22:22:16 UTC</createdTime>
+<generatorID>CC46D0EE-47D4-A2BA-34DB-F7FC1839EFF8</generatorID>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1848AC43-4872-9B30-E4A6-BBFABD2016B4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1BEEFFB2-B15C-EC66-8BB6-E5BF829BE944" name="pr_res_FK">
+<createdBy>mercaman</createdBy>
+<createdTime>2021-10-21 22:22:16 UTC</createdTime>
+<generatorID>30876C7F-541A-0198-C8EC-E5C62DB6BD74</generatorID>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7FEB309E-89C7-9099-CA17-3CFAB729D569"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,167 @@
+﻿@model HVK.Models.Customer
+
+<div class="container">
+    <div class="row container_box mt-3 mb-3">
+        <div class="col bg-dark text-light">
+            Review Reservation Information
+        </div>
+        <div class="col bg-dark text-light">
+            Print Invoice
+        </div>
+    </div>
+
+    <div class="multiForm ">
+        <div class="card container container_box_2 w-50 my-2">
+            <div class="container row">
+                <div class="col">
+                    <div class="text-primary fs-2 my-4">Invoice</div>
+                </div>
+                <div class="col text-end container-fluid my-4">
+                    <div class="row">
+                        <div class="col">Date: @DateTime.Today.ToString("yyyy-MM-dd")</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Invoice: #100</div>
+                    </div>
+                </div>
+            </div>
+            <div class="container row">
+                <div class="col">
+                    Happy Valley Kennel
+                </div>
+                <div class="col text-end">
+
+                </div>
+            </div>
+            <div class="container row">
+                <div class="col">
+                    123 Chemin Scott
+                </div>
+                <div class="col text-end">
+
+                </div>
+            </div>
+            <div class="container row">
+                <div class="col">
+                    Chelsea, QC, J9B 1R6
+                </div>
+                <div class="col text-end">
+
+                </div>
+            </div>
+            <div class="container row">
+                <div class="col">
+                    819-123-4567
+                </div>
+                <div class="col text-end">
+
+                </div>
+            </div>
+            <div class="row container">
+                <table class="table mx-auto">
+                    <tr class="table-primary">
+                        <th>Reservation Start</th>
+                        <th>Reservation End</th>
+                        <th>Number of Days</th>
+                        <th>Payment Terms</th>
+                    </tr>
+                    <tr>
+                        <td>@*@ViewBag.Reservation.StartDate.ToString("yyyy-MM-dd")*@ </td>
+                        <td>@*@ViewBag.Reservation.EndDate.ToString("yyyy-MM-dd")*@</td>
+                        <td> @*@ViewBag.Reservation.EndDate.Subtract(@ViewBag.Reservation.StartDate).Days*@</td>
+                        <td>Due On Receipt</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="row container">
+                <table class="table mx-auto">
+                    <tr class="table-primary">
+                        <th>Description</th>
+                        <th>Daily Rate</th>
+                        <th>Number of Days</th>
+                        <th>Item Total </th>
+                    </tr>
+
+                    <tr class="text-end">
+                        <td class="text-start">@*@ViewBag.Service.ServiceDescription*@ - @Model.Pets.FirstOrDefault().Name</td>
+                        <td>@*@ViewBag.DailyRate.Rate*@ $</td>
+                        <td>@*@ViewBag.Reservation.EndDate.Subtract(@ViewBag.Reservation.StartDate).Days*@</td>
+                        <td>
+                            <input type="number" min="0" step="0.01" value="(@*@ViewBag.DailyRate.Rate*@ * @*@ViewBag.Reservation.EndDate.Subtract(@ViewBag.Reservation.StartDate).Days)*@" />
+                        </td>
+                    </tr>
+
+                </table>
+            </div>
+            <div class="row">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-6">
+
+                        </div>
+                        <div class="col-6">
+                            <div class="d-flex flex-row-reverse col-12">
+                                <div class="container-fluid text-end">
+                                    <div class="row">
+                                        <div class="col">
+                                            Subtotal
+                                        </div>
+                                        <div class="col border bg-light">
+
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            HST
+                                        </div>
+                                        <div class="col border bg-light">
+
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            Total
+                                        </div>
+                                        <div class="col border bg-light">
+
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col h6 text-primary">
+                                            Thank you for your business!
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container w-50 mt-4">
+            <div class="row">
+                <div class="col-6">
+
+                </div>
+                <div class="col-6 container-fluid">
+                    <div class="row">
+                        <div class="col border-bottom mx-1"></div>
+                        <div class="col border-bottom mx-1"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Signature of Customer</div>
+                        <div class="col">Date</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="d-flex flex-row-reverse col-12">
+            @Html.ActionLink("Print & End Reservation", "Index", "Clerk", null, new { @class = "btn-secondary rounded float-end order-0 mx-1 px-2 bg-primary" })
+            @Html.ActionLink("Back", "Index", "EndPetVisit", null, new { @class = "btn-secondary rounded float-end order-0 mx-1 px-2 " })
+        </div>
+    </div>
+
+</div>
+

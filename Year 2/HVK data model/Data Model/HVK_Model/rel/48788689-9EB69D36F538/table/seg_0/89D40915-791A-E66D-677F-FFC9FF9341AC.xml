@@ -1,0 +1,148 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="89D40915-791A-E66D-677F-FFC9FF9341AC" name="HVK_CUSTOMER">
+<createdBy>mercaman</createdBy>
+<createdTime>2021-10-21 22:22:16 UTC</createdTime>
+<generatorID>76AF414C-616C-0AC7-0EB1-8F3D115CC919</generatorID>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<abbreviation>cus</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CUSTOMER_ID" id="324BA1C3-B5E9-D844-C4CC-05FE04B4932E">
+<createdBy>mercaman</createdBy>
+<createdTime>2021-10-21 22:22:16 UTC</createdTime>
+<generatorID>25EA18CE-5C13-4AA1-115A-0739DD08C220</generatorID>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>B1396B01-8749-B8CA-7262-BB8A7E2A6426</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_cus_CUSTOMER_ID</notNullConstraintName>
+</Column>
+<Column name="CUSTOMER_FIRST_NAME" id="CBFCD2BC-C3EF-715A-1DC4-D888CB5B18BB">
+<createdBy>mercaman</createdBy>
+<createdTime>2021-10-21 22:22:16 UTC</createdTime>
+<generatorID>2FC30E53-9450-E858-4648-86BBD549712D</generatorID>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D58CB42D-C93A-FB41-08BA-42FBD73B9150</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_cus_CUSTOMER_FIRST_NAME</notNullConstraintName>
+</Column>
+<Column name="CUSTOMER_LAST_NAME" id="5D6BEB65-FDDB-4D01-DB4D-D1E3D4A43851">
+<createdBy>mercaman</createdBy>
+<createdTime>2021-10-21 22:22:16 UTC</createdTime>
+<generatorID>D8E628DF-804A-227A-1364-BA064B4A1768</generatorID>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D58CB42D-C93A-FB41-08BA-42FBD73B9150</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_cus_CUSTOMER_LAST_NAME</notNullConstraintName>
+</Column>
+<Column name="CUSTOMER_PHONE_NUMBER" id="028D5972-1551-C3C5-D2D7-D2EAA7ABD942">
+<createdBy>mercaman</createdBy>
+<createdTime>2021-10-21 22:22:16 UTC</createdTime>
+<generatorID>62B93E22-8221-4C17-5B16-564506D5356E</generatorID>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>8EAE4EC5-3AB2-C32D-8595-B53EB406E040</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CUSTOMER_EMERGENCY_CONTACT_NAME" id="BCD4CCF4-4834-58B5-F408-001E85CE8044">
+<createdBy>mercaman</createdBy>
+<createdTime>2021-10-21 22:22:16 UTC</createdTime>
+<generatorID>E93EEAF2-2B65-F18C-BFEA-DAE1DE9ED584</generatorID>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D58CB42D-C93A-FB41-08BA-42FBD73B9150</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_cus_CUSTOMER_EMERGENCY_CONTACT_NAME</notNullConstraintName>
+</Column>
+<Column name="CUSTOMER_EMERGENCY_CONTACT_NUMBER" id="BC4ABE0B-D364-6E18-EB48-BE88532F1E6E">
+<createdBy>mercaman</createdBy>
+<createdTime>2021-10-21 22:22:16 UTC</createdTime>
+<generatorID>E7ADBD8A-07E9-925A-BEDD-6454FCA775AA</generatorID>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>8EAE4EC5-3AB2-C32D-8595-B53EB406E040</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CUSTOMER_STREET" id="8376AC78-1174-6091-2C19-C5ECEE3CB9AF">
+<createdBy>mercaman</createdBy>
+<createdTime>2021-10-21 22:22:16 UTC</createdTime>
+<generatorID>5B2FE117-C1A2-A24F-725C-48096001D5BE</generatorID>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>0EC11638-B8BF-1EBF-475B-D37D833FA774</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CUSTOMER_PROVINCE" id="741FD50F-2ACF-7D36-F80F-D5F45C6173E0">
+<createdBy>mercaman</createdBy>
+<createdTime>2021-10-21 22:22:16 UTC</createdTime>
+<generatorID>A211FBCF-8A8F-530C-84C8-9A220EB81CDB</generatorID>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<constraintName>CK_cus_CUSTOMER_PROVINCE</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>81A76DF1-35CC-32BC-A207-91437743C36B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_cus_CUSTOMER_PROVINCE</notNullConstraintName>
+</Column>
+<Column name="CUSTOMER_POSTAL_CODE" id="AF6B47EF-348A-0332-EDEB-73A9AE0903A6">
+<createdBy>mercaman</createdBy>
+<createdTime>2021-10-21 22:22:16 UTC</createdTime>
+<generatorID>37368E9B-02F9-6591-DFEB-0415B52AE399</generatorID>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>0E34CB4B-E156-1A78-1A04-F3EE205A1FF3</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_cus_CUSTOMER_POSTAL_CODE</notNullConstraintName>
+</Column>
+<Column name="CUSTOMER_EMAIL" id="23817151-75E2-9D35-2027-ACAD6D6A888B">
+<createdBy>mercaman</createdBy>
+<createdTime>2021-10-21 22:22:16 UTC</createdTime>
+<generatorID>E3B06C32-62EC-39AB-8B58-3BAF2FA275F8</generatorID>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>70C83F90-120E-5713-641E-742B84E78FF8</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_cus_CUSTOMER_EMAIL</notNullConstraintName>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6C02FE74-F7F3-EA39-FC2A-F7E60BEB4ADF" name="HVK_CUSTOMER_PK">
+<createdBy>mercaman</createdBy>
+<createdTime>2021-10-21 22:22:16 UTC</createdTime>
+<generatorID>A4F194CF-4F64-CC27-3DBB-234EF1D489D5</generatorID>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="324BA1C3-B5E9-D844-C4CC-05FE04B4932E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

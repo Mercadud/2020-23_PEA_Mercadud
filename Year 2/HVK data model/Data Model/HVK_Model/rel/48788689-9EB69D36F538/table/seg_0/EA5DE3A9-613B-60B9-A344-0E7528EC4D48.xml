@@ -1,0 +1,134 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="EA5DE3A9-613B-60B9-A344-0E7528EC4D48" name="HVK_SERVICE">
+<createdBy>mercaman</createdBy>
+<createdTime>2021-10-21 22:22:16 UTC</createdTime>
+<generatorID>4B1F2446-96F9-B43B-C7AD-FD1F353E9678</generatorID>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<abbreviation>ser</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="SERVICE_TYPE" id="C028B6DD-AE80-E443-06BF-0E3FF0FFE7E6">
+<createdBy>mercaman</createdBy>
+<createdTime>2021-10-21 22:22:16 UTC</createdTime>
+<generatorID>F7C30E1F-0086-DBB9-8284-3A8BBE4C73C6</generatorID>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D58CB42D-C93A-FB41-08BA-42FBD73B9150</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_ser_SERVICE_TYPE</notNullConstraintName>
+</Column>
+<Column name="SERVICE_FREQUENCY" id="0E52A4CE-22FA-A80C-1FB6-C06ECF122DD1">
+<createdBy>mercaman</createdBy>
+<createdTime>2021-10-21 22:22:16 UTC</createdTime>
+<generatorID>199F4541-21C5-892B-FC08-9408CA75559F</generatorID>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>57B3F91A-FC02-2321-BAED-5C24B0AF0C33</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_ser_SERVICE_FREQUENCY</notNullConstraintName>
+</Column>
+<Column name="rat_RATE_ID" id="9EAD64F7-0325-5D71-78CA-745E81FB57CE">
+<createdBy>mercaman</createdBy>
+<createdTime>2021-10-21 22:22:16 UTC</createdTime>
+<generatorID>3C3A5F08-F52E-9C28-15F5-6D6126E111B1</generatorID>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>B1396B01-8749-B8CA-7262-BB8A7E2A6426</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_ser_rat_RATE_ID</notNullConstraintName>
+<associations>
+<colAssociation fkAssociation="923E13A2-171F-D0F6-6937-9384E67A68C5" referredColumn="FC34E545-5CB9-6BF4-8D0B-FEB6062D0121"/>
+</associations>
+</Column>
+<Column name="pr_pet_pet-PET_ID" id="442CCCCD-B436-8F5A-EBB1-D661A4889302">
+<createdBy>mercaman</createdBy>
+<createdTime>2021-10-21 22:22:16 UTC</createdTime>
+<generatorID>4F034E86-0391-5961-175A-6406EA161554</generatorID>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>B1396B01-8749-B8CA-7262-BB8A7E2A6426</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_ser_pr_pet_pet-PET_ID</notNullConstraintName>
+<associations>
+<colAssociation fkAssociation="71914662-1EF4-7AD4-48EA-E36542598666" referredColumn="1848AC43-4872-9B30-E4A6-BBFABD2016B4"/>
+</associations>
+</Column>
+<Column name="pr_res_RESERVATION_ID" id="F56831A9-F656-2F57-A164-4F1FA9D9FFBD">
+<createdBy>mercaman</createdBy>
+<createdTime>2021-10-21 22:22:16 UTC</createdTime>
+<generatorID>CE93E63F-BC23-3CE2-ADAC-05FBF5000FED</generatorID>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>B1396B01-8749-B8CA-7262-BB8A7E2A6426</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_ser_pr_res_RESERVATION_ID</notNullConstraintName>
+<associations>
+<colAssociation fkAssociation="71914662-1EF4-7AD4-48EA-E36542598666" referredColumn="7FEB309E-89C7-9099-CA17-3CFAB729D569"/>
+</associations>
+</Column>
+<Column name="SERVICE_DESCRIPTION" id="06BF4E33-3AAF-A7A7-33F5-D2474522514F">
+<createdBy>mercaman</createdBy>
+<createdTime>2021-10-21 22:22:16 UTC</createdTime>
+<generatorID>35E08C1C-A6B0-0CA2-4D99-100680B00978</generatorID>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT040</logicalDatatype>
+<domain>7D2F2CD8-3976-1FD9-3880-9C41F5F6DE05</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_ser_SERVICE_DESCRIPTION</notNullConstraintName>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="385E4945-CB80-CFCF-3C89-052E2D496E2A" name="HVK_SERVICE_PK">
+<createdBy>mercaman</createdBy>
+<createdTime>2021-10-21 22:22:16 UTC</createdTime>
+<generatorID>6FE10383-FB04-87EC-AAEA-90887BF041CF</generatorID>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C028B6DD-AE80-E443-06BF-0E3FF0FFE7E6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E3FEB708-5BE5-DBFA-A011-A32D75F9E137" name="ser_rat_FK">
+<createdBy>mercaman</createdBy>
+<createdTime>2021-10-21 22:22:16 UTC</createdTime>
+<generatorID>81C166A2-C780-AB31-A43B-5AEC381F30CC</generatorID>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9EAD64F7-0325-5D71-78CA-745E81FB57CE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="03A47037-6120-54D3-52E4-8DFFDD850B86" name="ser_pr_FK">
+<createdBy>mercaman</createdBy>
+<createdTime>2021-10-21 22:22:16 UTC</createdTime>
+<generatorID>934B3F96-A8F0-59C6-BAA4-763561D3E50F</generatorID>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="442CCCCD-B436-8F5A-EBB1-D661A4889302"/>
+<colUsage columnID="F56831A9-F656-2F57-A164-4F1FA9D9FFBD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

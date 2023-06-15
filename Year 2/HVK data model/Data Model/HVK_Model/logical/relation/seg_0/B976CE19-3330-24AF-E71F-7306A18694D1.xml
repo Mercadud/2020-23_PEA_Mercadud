@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="customer_pet" directorySegmentName="seg_0" id="B976CE19-3330-24AF-E71F-7306A18694D1">
+<createdBy>2082054</createdBy>
+<createdTime>2021-09-14 18:26:17 UTC</createdTime>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<engineerTo>
+<item key="48788689-91B6-4782-1B02-9EB69D36F538" value="true"/>
+</engineerTo>
+<sourcePk>A4F194CF-4F64-CC27-3DBB-234EF1D489D5</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>owns</nameOnSource>
+<nameOnTarget>is owned by</nameOnTarget>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>76AF414C-616C-0AC7-0EB1-8F3D115CC919</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>FA3EED99-4ACB-EA4F-6CB9-74A8D554E92A</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

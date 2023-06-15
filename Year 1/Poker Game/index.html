@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./Styles/intro.css">
+    <title>Partially Oblivious Kard Epyc Racket</title>
+  </head>
+  <body>
+      <div id="wrapper">
+          <header>
+          <h1>P.O.K.E.R.</h1>
+          <p>please fill this form</p>
+        </header>
+    <form action="game.html" id="reForm" method="get" name="reForm">
+      <p>
+        <label for="username">Username:</label>
+        <input
+          id="username"
+          name="username"
+          placeholder="Gton5"
+          size="30"
+          type="text"
+        />
+        <p class="error"></p>
+      </p>
+      <p>
+        <label for="firstName">First Name:</label>
+        <input
+          id="firstName"
+          name="firstName"
+          placeholder="ex. Tony"
+          size="30"
+          type="text"
+        />
+        <p class="error"></p>
+      </p>
+      <p>
+        <label for="lastName">Last Name:</label>
+        <input
+          id="lastName"
+          name="lastName"
+          placeholder="ex. Gumba"
+          size="30"
+          type="text"
+        />
+        <p class="error"></p>
+      </p>
+      <p>
+        <label for="emailAddr">Email Address:</label>
+        <input
+          id="emailAddr"
+          name="emailAddr"
+          placeholder="tonygumba@poke.racket"
+          size="40"
+          type="text"
+        />
+        <p class="error"></p>
+      </p>
+      <p>
+        <label for="phoneNumber">Phone:</label>
+        <input
+          id="phoneNumber"
+          name="phoneNumber"
+          placeholder="(nnn) nnn-nnnn"
+          size="20"
+          type="text"
+        />
+        <p class="error"></p>
+      </p>
+      <p>
+        <label for="city">City:</label>
+        <input
+          id="city"
+          name="city"
+          placeholder="ex. Gumba City"
+          size="20"
+          type="text"
+        />
+        <p class="error"></p>
+      </p>
+      <p>
+        <label for="startingMoney">Starting Money:</label>
+        <input
+          type="number"
+          name="startingMoney"
+          id="startingMoney"
+          size="20"
+        />
+        <p class="error"></p>
+      </p>
+      <br /><input name="subButton" type="submit" id="button" value="Submit"/>
+    </form>
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.js"
+integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+crossorigin="anonymous"></script>
+<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.19.3/jquery.validate.min.js"></script>
+<script
+src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.19.3/additional-methods.min.js">
+</script>
+<script src="/js/intro.js"></script>
+  </body>
+</html>

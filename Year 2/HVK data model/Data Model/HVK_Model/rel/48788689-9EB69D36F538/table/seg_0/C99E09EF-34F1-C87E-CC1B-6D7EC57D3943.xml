@@ -1,0 +1,64 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C99E09EF-34F1-C87E-CC1B-6D7EC57D3943" name="HVK_VACCINATION">
+<createdBy>mercaman</createdBy>
+<createdTime>2021-10-21 22:22:16 UTC</createdTime>
+<generatorID>67F385EA-A4EC-06C7-670C-B40499F6587A</generatorID>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<abbreviation>v</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="VACCINATION_TYPE" id="D1ACD1DD-0B25-22C9-72D4-F1110C53E266">
+<createdBy>mercaman</createdBy>
+<createdTime>2021-10-21 22:22:16 UTC</createdTime>
+<generatorID>BF810CDF-4665-B16A-D666-79AB2C571133</generatorID>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D58CB42D-C93A-FB41-08BA-42FBD73B9150</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_v_VACCINATION_TYPE</notNullConstraintName>
+</Column>
+<Column name="VACCINATION_NAME" id="80530733-0BDB-A18C-7436-D3C76B1E5FFD">
+<createdBy>mercaman</createdBy>
+<createdTime>2021-10-21 22:22:16 UTC</createdTime>
+<generatorID>93B32E15-8857-268A-5D15-AD0A1E08AF1F</generatorID>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D58CB42D-C93A-FB41-08BA-42FBD73B9150</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_v_VACCINATION_NAME</notNullConstraintName>
+</Column>
+<Column name="VACCINATION_PET_TYPE" id="7422A57B-93D3-62A4-D5E0-90156C091866">
+<createdBy>mercaman</createdBy>
+<createdTime>2021-10-21 22:22:16 UTC</createdTime>
+<generatorID>7656F6B0-0679-7274-9856-CA9C810CDEC8</generatorID>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<constraintName>CK_v_VACCINATION_PET_TYPE</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>60370DA6-2E8B-FAAD-DD9D-C6E41300C4CA</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_v_VACCINATION_PET_TYPE</notNullConstraintName>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="DA23C435-9215-918B-7F39-963792021156" name="HVK_VACCINATION_PK">
+<createdBy>mercaman</createdBy>
+<createdTime>2021-10-21 22:22:16 UTC</createdTime>
+<generatorID>6E4E6813-9906-67DC-C030-DF36C77F6154</generatorID>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D1ACD1DD-0B25-22C9-72D4-F1110C53E266"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

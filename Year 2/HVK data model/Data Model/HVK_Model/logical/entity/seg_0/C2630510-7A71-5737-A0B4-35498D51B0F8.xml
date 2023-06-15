@@ -1,0 +1,65 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="C2630510-7A71-5737-A0B4-35498D51B0F8" name="DOG">
+<createdBy>2082054</createdBy>
+<createdTime>2021-09-14 18:20:13 UTC</createdTime>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<engineerTo>
+<item key="48788689-91B6-4782-1B02-9EB69D36F538" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<hierarchicalParent>FA3EED99-4ACB-EA4F-6CB9-74A8D554E92A</hierarchicalParent>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<shortName>dog</shortName>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="DOG_SIZE" id="5A49A15E-B5A0-64F4-197A-473895441B23">
+<createdBy>2088419</createdBy>
+<createdTime>2021-09-30 20:36:07 UTC</createdTime>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<engineerTo>
+<item key="48788689-91B6-4782-1B02-9EB69D36F538" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<listOfValues>
+<valueDef value="L" description="Large"/>
+<valueDef value="M" description="Medium"/>
+<valueDef value="S" description="Small"/>
+</listOfValues>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DOG_IS_CLIMBER" id="ADA05256-2176-15B9-8161-1AA71D1C40EB">
+<createdBy>2088419</createdBy>
+<createdTime>2021-09-30 20:36:24 UTC</createdTime>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<engineerTo>
+<item key="48788689-91B6-4782-1B02-9EB69D36F538" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT034</logicalDatatype>
+<domain>229CC33A-C72C-6B01-2FF6-6F6630E9EB40</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DOG_BARKER" id="1CD4604C-EA31-833A-3EA3-9B1C67E92634">
+<createdBy>2088419</createdBy>
+<createdTime>2021-10-14 18:54:03 UTC</createdTime>
+<ownerDesignName>HVK_Model</ownerDesignName>
+<engineerTo>
+<item key="48788689-91B6-4782-1B02-9EB69D36F538" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT034</logicalDatatype>
+<domain>229CC33A-C72C-6B01-2FF6-6F6630E9EB40</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>
